@@ -7,11 +7,12 @@
         <rulePack>
             <rulesStrings>
                 <li>r_name->[AOGlist]</li>
-                <li>r_name->[AOGlist] [AOGlist]</li>
-                <li>r_name->The [AOGlist]</li>
+                <li>r_name->[AOGlist] 'the [AOGFlair]'</li>
+                <li>r_name->[AOGlist] '[AOGFlair]'</li>
             </rulesStrings>
             <rulesFiles>
                 <li>AOGlist->Names/AOGNames</li>
+                <li>AOGFlair->Names/AOGFlair</li>
             </rulesFiles>
         </rulePack>
     </RulePackDef>
@@ -20,10 +21,12 @@
         <defName>NamerAOGColonyNames</defName>
         <rulePack>
             <rulesStrings>
-                <li>r_name->The [AOGlist]</li>
+                <li>r_name->The [AOGFlair] of [AOGlist]</li>
+                <li>r_name->[AOGlist]'s [AOGFlair]</li>
             </rulesStrings>
             <rulesFiles>
                 <li>AOGlist->Names/AOGNames</li>
+                <li>AOGFlair->Names/AOGFlair</li>
             </rulesFiles>
         </rulePack>
     </RulePackDef>

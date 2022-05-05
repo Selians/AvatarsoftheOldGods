@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<AlienRace.ThingDef_AlienRace ParentName="S_BaseGodAvatar">
+    <!--Empyrean God -->
+    <defName>S_GodEmpyrean</defName>
+    <description>Empyrean gods are beings who were given birth to by primordial or celestial gods. Proud and beautiful, their avatars are temperature resistant and capable of regenerating most damage.</description>
+    
+    <statBases>
+        <!--Strong, proud, beautiful, imperial, health / limb regenerating -->
+        <ComfyTemperatureMin>-250</ComfyTemperatureMin>
+        <ComfyTemperatureMax>1950</ComfyTemperatureMax>
+    </statBases>  
+
+    <race>
+        <hasGenders>true</hasGenders>
+        <baseBodySize>1.1</baseBodySize>
+        <baseHealthScale>1.8</baseHealthScale>
+        <manhunterOnDamageChance>0</manhunterOnDamageChance>
+        <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+    </race>
+
+        <alienRace>
+        <generalSettings>
+            <alienPartGenerator>
+            	<customDrawSize>(1.2, 1.2)</customDrawSize>
+				<customPortraitDrawSize>(1, 1)</customPortraitDrawSize>
+
+                <aliencrowntypes>
+                    <li>f_average</li>
+                    <li>f_pointy</li>
+                    <li>f_wide</li>
+                    <li>m_average</li>
+                    <li>m_narrow</li>
+                    <li>m_wide</li>
+                </aliencrowntypes>
+
+                <alienbodytypes>
+                    <li>Male</li>
+                    <li>Female</li>
+                    <li>Hulk</li>
+                </alienbodytypes>
+
+                <useGenderedHeads>false</useGenderedHeads>
+                <useGenderedBodies>false</useGenderedBodies>
+
+                <colorChannels>
+                    <li>
+                        <name>skin</name>
+                        <first Class="ColorGenerator_Options">
+                            <options>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(253, 239, 229, 255)</only>
+                                </li>
+                            </options>
+                        </first>
+                        <!--<second Class="ColorGenerator_Options">
+                            <options>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(0.500, 1.000, 0.000, 1.000)</only>
+                                </li>
+                            </options>
+                        </second>-->
+                    </li>
+
+                    <li>
+                    <!-- Tattoo colors are used to color the halos & divine shine. Figure out how to replace this with a slider if possible, would be a lot cooler - otherwise predetermine colors. -->
+                        <name>tattoo</name>
+                        <first Class="ColorGenerator_Options">
+                            <options>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(255, 234, 160, 185)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(194, 17, 61, 185)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(31, 245, 53, 185)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(36, 196, 240, 185)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(215, 255, 253, 185)</only>
+                                </li>
+                            </options>
+                        </first>
+                    </li>
+
+                    <li>
+                        <name>hair</name>
+                        <first Class="ColorGenerator_Options">
+                            <options>
+                                <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(1.0,1.0,1.0,1)</only>
+                                </li>
+                                <li>
+                                    <weight>4</weight>
+                                    <only>RGBA(0.93,0.79,0.61,1)</only>
+                                </li>
+                                <li>
+                                    <weight>2</weight>
+                                    <only>RGBA(0.76,0.57,0.33,1)</only>
+                                </li>
+                                <li>
+                                    <weight>1</weight>
+                                    <only>RGBA(0.52,0.33,0.18,1)</only>
+                                </li>
+                                <li>
+                                    <weight>1</weight>
+                                    <only>RGBA(0.35,0.23,0.13,1)</only>
+                                </li>
+                                <li>
+                                    <weight>1</weight>
+                                    <only>RGBA(0.3,0.2,0.1,1)</only>
+                                </li>
+                                <li>
+                                    <weight>1</weight>
+                                    <only>RGBA(0.25,0.2,0.15,1)</only>
+                                </li>
+                                <li>
+                                    <weight>1</weight>
+                                    <only>RGBA(0.31,0.28,0.26,1)</only>
+                                </li>
+                                <li>
+                                    <weight>1</weight>
+                                    <only>RGBA(0.2,0.2,0.2,1)</only>
+                                </li>
+                            </options>
+                        </first>
+                    </li>
+                </colorChannels>
+                    <bodyAddons>
+                    <!-- DIVINE SIGIL -->
+                        <li>
+                            <path>Placeholder/Halo/halo_a</path>
+                            <bodyPart>Head</bodyPart>
+                            <drawnInBed>false</drawnInBed>
+                            <inFrontOfBody>false</inFrontOfBody>
+                            <layerInvert>false</layerInvert>
+                            <colorChannel>tattoo</colorChannel>
+                            <drawSize>1</drawSize>
+                            <angle>0</angle>
+                            <offsets>
+                                <south>
+                                    <bodyTypes>
+                                        <Female>(0,0.4)</Female>
+                                        <Male>(0,0.4)</Male>
+                                        <Thin>(0,0.4)</Thin>
+                                        <Hulk>(0,0.45)</Hulk>
+                                        <Fat>(0,0.4)</Fat>
+                                    </bodyTypes>
+                                </south>
+                                <north>
+                                    <bodyTypes>
+                                        <Female>(0,0.4)</Female>
+                                        <Male>(0,0.4)</Male>
+                                        <Thin>(0,0.4)</Thin>
+                                        <Hulk>(0,0.45)</Hulk>
+                                        <Fat>(0,0.4)</Fat>
+                                    </bodyTypes>
+                                </north>
+                                <east>
+                                <!-- X offset needs refining - Same goes for the art assets. -->
+                                    <bodyTypes>
+                                        <Female>(0.45,0.65)</Female>
+                                        <Male>(0.45,0.65)</Male>
+                                        <Thin>(0.45,0.65)</Thin>
+                                        <Hulk>(0.45,0.7)</Hulk>
+                                        <Fat>(0.45,0.65)</Fat>
+                                    </bodyTypes>
+                                </east>
+                            </offsets>
+                        </li>
+                        <!-- DIVINE SIGHT -->
+                        <li>
+                            <path>Empyrean/Eyes/sight_emp</path>
+                            <bodyPart>Head</bodyPart>
+                            <drawnInBed>true</drawnInBed>
+                            <inFrontOfBody>true</inFrontOfBody>
+                            <layerInvert>true</layerInvert>
+                            <colorChannel>tattoo</colorChannel>
+                            <alignWithHead>true</alignWithHead>
+                            <drawSize>1</drawSize>
+                            <angle>0</angle>
+                            <offsets>
+                                <south>
+                                    <bodyTypes>
+                                        <Female>(0,0)</Female>
+                                        <Male>(0,0)</Male>
+                                        <Thin>(0,0)</Thin>
+                                        <Hulk>(0,0)</Hulk>
+                                        <Fat>(0,0)</Fat>
+                                    </bodyTypes>
+                                </south>
+                                <north>
+                                    <bodyTypes>
+                                        <Female>(0,0)</Female>
+                                        <Male>(0,0)</Male>
+                                        <Thin>(0,0)</Thin>
+                                        <Hulk>(0,0)</Hulk>
+                                        <Fat>(0,0)</Fat>
+                                    </bodyTypes>
+                                </north>
+                                <east>
+                                <!-- X offset needs refining - Same goes for the art assets. -->
+                                    <bodyTypes>
+                                        <Female>(0.45,0.65)</Female>
+                                        <Male>(0.45,0.65)</Male>
+                                        <Thin>(0.45,0.65)</Thin>
+                                        <Hulk>(0.45,0.7)</Hulk>
+                                        <Fat>(0.45,0.65)</Fat>
+                                    </bodyTypes>
+                                </east>
+                            </offsets>
+                        </li>
+                    </bodyAddons>
+            </alienPartGenerator>
+        </generalSettings>
+
+        <graphicPaths>
+            <li>
+                <body>Empyrean/Body/</body>
+                <head>Empyrean/Head/</head>
+            </li>
+        </graphicPaths>
+
+        <compatibility>
+            <isFlesh>true</isFlesh>
+            <isSentient>true</isSentient>
+            <hasBlood>true</hasBlood>
+        </compatibility>
+    </alienRace>
+
+</AlienRace.ThingDef_AlienRace>
+
+</Defs>

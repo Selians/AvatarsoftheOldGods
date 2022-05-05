@@ -5,7 +5,8 @@
 		<label>Avatars of the old gods</label>
 		<description>A faction consisting of avatars of the old gods</description>
 		<basicMemberKind>LesserPK</basicMemberKind>
-		<pawnsPlural>Deities</pawnsPlural>
+		<pawnSingular>God</pawnSingular>
+		<pawnsPlural>Gods</pawnsPlural>
 		<isPlayer>true</isPlayer>
 
 		<!-- red -->
@@ -17,10 +18,7 @@
 
 		<factionIconPath>Icons/Beaver</factionIconPath>
 		<settlementTexturePath>Icons/Beaver</settlementTexturePath>
-
-		<!-- BUG! Pawns get names from normal list, not from custom namer - Why?-->
 		<settlementNameMaker>NamerAOGColonyNames</settlementNameMaker>
-		<pawnNameMaker>NamerAOGPawnNames</pawnNameMaker>
 		<factionNameMaker>NamerAOGColonyNames</factionNameMaker>
 		<playerInitialSettlementNameMaker>NamerAOGColonyNames</playerInitialSettlementNameMaker>
 
