@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <TraitDef>
+		<defName>SelEth_EmpyreanTrait</defName>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<label>Empyrean Deity</label>
+			<description>[PAWN_nameDef] is to be worshipped as an Empyrean and does not concern themselves over mortal inconveniences.</description>
+            <theOnlyAllowedMentalBreaks></theOnlyAllowedMentalBreaks>
+		</degreeDatas>
+		<!--
+			<conflictingTraits>
+			<li>SelEth_ArchaicTrait</li>
+		</conflictingTraits>
+		-->
+	</TraitDef>
+<!--
+    <TraitDef>
+		<defName>SelEth_ArchaicTrait</defName>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<label>Empyrean Deity</label>
+			<description>[PAWN_nameDef] is an Archaic being and does not concern themselves over mortal inconveniences.</description>
+            <theOnlyAllowedMentalBreaks></theOnlyAllowedMentalBreaks>
+		</degreeDatas>
+		<conflictingTraits>
+			<li>SelEth_EmpyreanTrait</li>
+		</conflictingTraits>
+	</TraitDef>
+-->
+</Defs>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+<Defs>
+    <HediffDef>
+        <defName>SelEth_Empyrean</defName>
+		<label>Empyrean</label>
+        <description>[PAWN_nameDef] is to be worshipped as an Empyrean and does not concern themselves over mortal inconveniences.</description>
+        <defaultLabelColor>(0.0, 1.0, 0.0)</defaultLabelColor>
+        <everCurableByItem>false</everCurableByItem>
+        <hediffClass>Hediff_AddedPart</hediffClass>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>2</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <isBad>false</isBad>
+    </HediffDef>
+        <HediffDef>
+        <defName>SelEth_Archaic</defName>
+		<label>Archaic</label>
+        <description>[PAWN_nameDef] is an Archaic being and does not concern themselves over mortal inconveniences.</description>
+        <defaultLabelColor>(0.0, 1.0, 0.0)</defaultLabelColor>
+        <everCurableByItem>false</everCurableByItem>
+        <hediffClass>Hediff_AddedPart</hediffClass>
+        <stages>
+            <li>
+                <statOffsets>
+                    <PawnBeauty>-2.0</PawnBeauty>
+                    <hungerRateFactor>1.2</hungerRateFactor>
+                    <WorkSpeedGlobal>0.36</WorkSpeedGlobal>
+                    <PsychicSensitivity>-2</PsychicSensitivity>
+                    <PainShockThreshold>+2</PainShockThreshold>
+                    <MentalBreakThreshold>-5</MentalBreakThreshold>
+                    <MeleeDodgeChance>20</MeleeDodgeChance>
+                    <IncomingDamageFactor>0.1</IncomingDamageFactor>
+                    <MoveSpeed>0.7</MoveSpeed>
+                    <ImmunityGainSpeed>1</ImmunityGainSpeed>
+                </statOffsets>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>2</setMax>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <setMax>3</setMax>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <setMax>3</setMax>
+                    </li>
+                    <li>
+                        <capacity>Talking</capacity>
+                        <setMax>0.75</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <isBad>false</isBad>
+    </HediffDef>
+</Defs>
+-->

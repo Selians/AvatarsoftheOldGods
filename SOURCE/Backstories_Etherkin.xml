@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- Archaic-->
+<!--
+<AlienRace.BackstoryDef>
+            <defName>SelEth_ArchaicBS</defName>
+            <title>Archaic</title>
+            <titleShort>Archaic</titleShort>
+            <baseDescription>[PAWN_nameDef] is an Archaic being, ascended from a time before the creation of the cosmos. Often a precursor to chaos and hardship, Archaic wander the physical planes to fulfill a purpose beyond our understanding.</baseDescription>
+            <slot>Childhood</slot>
+            <spawnCategories>
+                <li>SelArchaicRace</li>
+            </spawnCategories>
+            <skillGains>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>5</amount>
+            </li>
+            </skillGains>
+        </AlienRace.BackstoryDef>
+-->
+<!--Empyrean-->
+        <AlienRace.BackstoryDef>
+            <defName>SelEth_EmpyreanBS</defName>
+            <title>Empyrean</title>
+            <titleShort>Empyrean</titleShort>
+            <baseDescription>[PAWN_nameDef] serves as a vessel for an Empyrean; a cosmic being hailing from the purest levels of divinity. Empyreans are worshipped by many cultures and races, walking the physical planes to fulfill a purpose beyond our understanding.</baseDescription>
+            <slot>Childhood</slot>
+            <spawnCategories>
+                <li>SelEth_EmpyreanRace</li>
+            </spawnCategories>
+            <skillGains>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>5</amount>
+            </li>
+            </skillGains>
+        </AlienRace.BackstoryDef>
+
+
+    <!--God of War-->
+        <AlienRace.BackstoryDef>
+            <defName>SelEth_WargodBS</defName>
+            <title>God of War</title>
+            <titleShort>wargod</titleShort>
+            <baseDescription>[PAWN_nameDef] is an being commonly associated with war, thirsting for the blood and sacrifice of conflict.</baseDescription>
+            <slot>Adulthood</slot>
+            <spawnCategories>
+                <li>SelEth_EmpyreanRace</li>
+            </spawnCategories>
+            <skillGains>
+            <li>
+                <defName>Melee</defName>
+                <amount>10</amount>
+            </li>
+            <li>
+                <defName>Shooting</defName>
+                <amount>10</amount>
+            </li>
+            </skillGains>
+        </AlienRace.BackstoryDef>
+
+    <!--God of Wisdom-->
+        <AlienRace.BackstoryDef>
+            <defName>SelEth_WisGodBS</defName>
+            <title>God of Wisdom</title>
+            <titleShort>wisgod</titleShort>
+            <baseDescription>[PAWN_nameDef] is a being commonly associated with knowledge, worshipped by scholars and intellectuals for their unbound perspective of the world.</baseDescription>
+            <slot>Adulthood</slot>
+            <spawnCategories>
+                <li>SelEth_EmpyreanRace</li>
+            </spawnCategories>
+            <skillGains>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>10</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>10</amount>
+            </li>
+            </skillGains>
+        </AlienRace.BackstoryDef>
+
+    <!--God of Death-->
+        <AlienRace.BackstoryDef>
+            <defName>SelEth_DeathgodBS</defName>
+            <title>deathgod</title>
+            <titleShort>God of Death</titleShort>
+            <baseDescription>[PAWN_nameDef] is a being commonly associated with the underworld, sealing the fate of any being that they deem unworthy.</baseDescription>
+            <slot>Adulthood</slot>
+            <spawnCategories>
+                <li>SelEth_EmpyreanRace</li>
+            </spawnCategories>
+            <skillGains>
+            <li>
+                <defName>Mining</defName>
+                <amount>10</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>10</amount>
+            </li>
+            </skillGains>
+        </AlienRace.BackstoryDef>
+
+    <!--God of Creation-->
+        <AlienRace.BackstoryDef>
+            <defName>SelEth_CreationGodBS</defName>
+            <title>creativegod</title>
+            <titleShort>God of Creation</titleShort>
+            <baseDescription>[PAWN_nameDef] is an being commonly associated with creation, worshipped for their craftmanship. </baseDescription>
+            <slot>Adulthood</slot>
+            <spawnCategories>
+                <li>SelEth_EmpyreanRace</li>
+            </spawnCategories>
+            <skillGains>
+            <li>
+                <defName>Construction</defName>
+                <amount>10</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>10</amount>
+            </li>
+            </skillGains>
+        </AlienRace.BackstoryDef>
+
+    <!--God of Fertility-->
+        <AlienRace.BackstoryDef>
+            <defName>SelEth_FertGodBS</defName>
+            <title>fertilegod</title>
+            <titleShort>Fertility God</titleShort>
+            <baseDescription>[PAWN_nameDef] is a being commonly associated with fertility, worshipped for their ability to bring about life. </baseDescription>
+            <slot>Adulthood</slot>
+            <spawnCategories>
+                <li>SelEth_EmpyreanRace</li>
+            </spawnCategories>
+            <skillGains>
+            <li>
+                <defName>Plants</defName>
+                <amount>10</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>10</amount>
+            </li>
+            </skillGains>
+        </AlienRace.BackstoryDef>
+
+    <!--God of Fortune-->
+        <AlienRace.BackstoryDef>
+            <defName>SelEth_FortuneGodBS</defName>
+            <title>God of Fortune</title>
+            <titleShort>goldengod</titleShort>
+            <baseDescription>[PAWN_nameDef] is a being commonly associated with fortune, worshipped for their ability to bring about wealth and gluttony.</baseDescription>
+            <slot>Adulthood</slot>
+            <spawnCategories>
+                <li>SelEth_EmpyreanRace</li>
+            </spawnCategories>
+            <skillGains>
+            <li>
+                <defName>Artistic</defName>
+                <amount>10</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>10</amount>
+            </li>
+            </skillGains>
+        </AlienRace.BackstoryDef>
+
+    <!--Supreme God-->
+        <AlienRace.BackstoryDef>
+            <defName>SelEth_GodkingBS</defName>
+            <title>God King</title>
+            <titleShort>godking</titleShort>
+            <baseDescription>[PAWN_nameDef] is a being of the highest rank, weaving the strings of destiny and steering other deities. </baseDescription>
+            <slot>Adulthood</slot>
+            <spawnCategories>
+                <li>SelEth_EmpyreanRace</li>
+            </spawnCategories>
+            <skillGains>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>10</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>10</amount>
+            </li>
+            </skillGains>
+            
+        </AlienRace.BackstoryDef>
+</Defs>

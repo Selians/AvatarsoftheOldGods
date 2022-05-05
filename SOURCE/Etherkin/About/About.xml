@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+    <name>Etherkin</name>                          <!-- The name of your mod in the mod list -->
+    <author>Selians</author>               <!-- Usually set to your Steam name -->
+    <packageId>SelEtherkin.Mod</packageId>     <!-- a unique identifier for your mod. Must contain only a-z and periods, no spaces. -->
+    <supportedVersions>                       <!-- the version(s) your mod supports in X.Y format. 1(X).3(Y) -->
+    <li>1.3</li>
+    </supportedVersions>
+    <description>Adds divine races to Rimworld.</description>   <!-- enter information describing purpose of mod -->
+</ModMetaData>

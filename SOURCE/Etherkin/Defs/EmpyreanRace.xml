@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<defs>
+
+<AlienRace.ThingDef_AlienRace ParentName="HumanRace">
+    <defName>SelEth_EmpyreanRace</defName>
+    <label>Empyrean</label>
+    <description>A cosmic being hailing from the purest of divinity, contained within a humanoid shell.</description>
+    
+    <!-- General Settings-->
+    <alienRace>
+        <generalSettings>
+            <immuneToAge>true</immuneToAge>
+            <immuneToXenophobia>true</immuneToXenophobia>
+            <chemicalSettings>
+                <li>
+                    <chemical>Luciferium</chemical>
+                    <ingestible>false</ingestible>
+                </li>
+            </chemicalSettings>
+            <forcedRaceTraitEntries>
+                <li>
+                    <defName>SelEth_EmpyreanTrait</defName>
+                    <chance>100</chance>
+                </li>
+            </forcedRaceTraitEntries>
+            <thoughtSettings>
+                <cannotReceiveThoughts>
+                    <li>NeedFood</li>
+                    <li>Naked</li>
+                    <li>SharedBed</li>
+                    <li>KnowPrisonerSold</li>
+					<li>KnowGuestOrganHarvested</li>
+					<li>KnowColonistOrganHarvested</li>
+                    <li>KnowBuriedInSarcophagus</li>
+					<li>ButcheredHumanlikeCorpse</li>
+					<li>KnowButcheredHumanlikeCorpse</li>
+					<li>ObservedLayingCorpse</li>
+					<li>ObservedLayingRottingCorpse</li>
+					<li>WitnessedDeathAlly</li>
+					<li>WitnessedDeathNonAlly</li>
+					<li>ColonistBanished</li>
+					<li>ColonistBanishedToDie</li>
+					<li>PrisonerBanishedToDie</li>
+					<li>BondedAnimalBanished</li>
+					<li>SleptInBedroom</li>
+					<li>SleptInBarracks</li>
+					<li>InsultedMood</li>
+					<li>KindWordsMood</li>
+                    <li>NeedOutdoors</li>
+					<li>ApparelDamaged</li>
+					<li>DeadMansApparel</li>
+					<li>HumanLeatherApparelSad</li>
+					<li>KnowGuestExecuted</li>
+					<li>KnowColonistExecuted</li>
+					<li>KnowPrisonerDiedInnocent</li>
+					<li>KnowColonistDied</li>
+					<li>PawnWithGoodOpinionDied</li>
+                    <li>EnvironmentDark</li>
+                </cannotReceiveThoughts>
+            </thoughtSettings>
+
+            <!--Body parts-->
+            <alienPartGenerator>
+                <aliencrowntypes>
+                    <li>Average_Normal</li>
+                    <li>EmpyreanAverageF</li>
+                    <li>EmpyreanPointyF</li>
+                    <li>EmpyreanWideF</li>
+                    <li>EmpyreanAverageM</li>
+                    <li>EmpyreanNarrowM</li>
+                    <li>EmpyreanWideM</li>
+                </aliencrowntypes>
+
+                <headBodyPartDef>EmpyreanSight</headBodyPartDef>
+
+                <alienbodytypes>
+                    <li>Hulk</li>
+                    <li>Male</li>
+                    <li>Female</li>
+                    <li>EmpyreanHulk</li>
+                    <li>EmpyreanFemale</li>
+                    <li>EmpyreanMale</li>
+                </alienbodytypes>
+
+                <colorChannels>
+                    <li>
+                        <name>skin</name>
+                        <first Class="ColorGenerator_Options">
+                            <options>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(0.000, 1.000, 0.000, 1.000)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(0.000, 0.500, 1.000, 1.000)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(0.000, 0.000, 1.000, 1.000)</only>
+                                </li>
+                            </options>
+                        </first>
+                        <second Class="ColorGenerator_Options">
+                            <options>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(0.500, 1.000, 0.000, 1.000)</only>
+                                </li>
+                            </options>
+                        </second>
+                    </li>
+                </colorChannels>
+
+                <bodyAddons>
+                    <!--Ethereal Sigil-->
+                    <li>
+                        <path>Things/Effects/Sigils</path>
+                        <bodyPart>Torso</bodyPart>
+                        <inFrontOfBody>false</inFrontOfBody>
+                        <drawnInBed>false</drawnInBed>
+                        <drawnDesiccated>false</drawnDesiccated>
+
+                        <offsets>
+                            <south>
+                                <bodyTypes>
+                                    <Hulk>(2,0)</Hulk>
+                                    <Female>(2,0)</Female>
+                                    <Male>(2,0)</Male>
+                                </bodyTypes>
+                            </south>
+                            <north>
+                                <bodyTypes>
+                                    <Hulk>(2,0)</Hulk>
+                                    <Female>(2,0)</Female>
+                                    <Male>(2,0)</Male>
+                                </bodyTypes>
+                            </north>
+                            <east>
+                                <bodyTypes>
+                                    <Hulk>(2,0)</Hulk>
+                                    <Female>(2,0)</Female>
+                                    <Male>(2,0)</Male>
+                                </bodyTypes>
+                            </east>
+                        </offsets>
+                    </li>
+                </bodyAddons>
+
+                <graphicPaths>
+                    <li>
+                        <head>Pawns/Empyrean/Heads</head>
+                        <body>Pawns/Empyrean/Body</body>
+                    </li>
+			    </graphicPaths>
+
+                <useGenderedHeads>false</useGenderedHeads>
+                <useGenderedBodies>true</useGenderedBodies>
+                <getsGreyAt>50000</getsGreyAt> 
+                
+            </alienPartGenerator>
+        </generalSettings>
+    </alienRace>
+    <statBases>
+    <!--Basic-->
+        <MarketValue>8000</MarketValue>
+        <LeatherAmount>25</LeatherAmount>
+		<Mass>80</Mass>
+		<RoyalFavorValue>4</RoyalFavorValue>
+        <needsRest>true</needsRest>
+    <!--Resistances-->
+        <PsychicSensitivity>0.5</PsychicSensitivity>
+        <ToxicSensitivity>0</ToxicSensitivity>
+        <ComfyTemperatureMin>-200</ComfyTemperatureMin>
+        <ComfyTemperatureMax>200</ComfyTemperatureMax>
+		<ImmunityGainSpeed>2</ImmunityGainSpeed>
+        <IncomingDamageFactor>0.4</IncomingDamageFactor>
+        <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+    <!--Buffs-->
+        <MoveSpeed>4</MoveSpeed>
+        <ResearchSpeed>2</ResearchSpeed>
+        <MiningSpeed>1</MiningSpeed>
+        <SocialImpact>4</SocialImpact>
+		<ConstructionSpeed>1</ConstructionSpeed>
+		<AnimalGatherSpeed>1.2</AnimalGatherSpeed>
+		<AnimalGatherYield>1.2</AnimalGatherYield>
+		<ShootingAccuracyPawn>4</ShootingAccuracyPawn>
+        <MeleeDodgeChance>20</MeleeDodgeChance>
+        <PawnBeauty>4.0</PawnBeauty>
+        <GlobalLearningFactor>1.0</GlobalLearningFactor>
+
+
+    </statBases>
+    <race>
+        <thinkTreeMain>Humanlike</thinkTreeMain>
+		<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+		<intelligence>Humanlike</intelligence>
+		<makesFootprints>true</makesFootprints>
+        <leatherDef>Leather_Human</leatherDef>
+        <minAgeForAdulthood>0</minAgeForAdulthood>
+        <baseBodySize>1.2</baseBodySize>
+		<lifeExpectancy>100000000</lifeExpectancy>
+		<baseHungerRate>0.2</baseHungerRate>
+        <baseHealthScale>2</baseHealthScale>
+        <foodType>OmnivoreHuman</foodType>
+        <gestationPeriodDays>100</gestationPeriodDays>
+        <lifeStageAges>
+            <li>
+            <def>HumanlikeAdult</def>
+            <minAge>0</minAge>
+            </li>
+        </lifeStageAges>
+        <ageGenerationCurve>
+            <points>
+            <li>(14,0)</li>
+            <li>(16,100)</li>
+            <li>(50,100)</li>
+            <li>(60,30)</li>
+            <li>(70,18)</li>
+            <li>(80,10)</li>
+            <li>(90,3)</li>
+            <li>(100,0)</li>
+            </points>
+        </ageGenerationCurve>
+        <hediffGiverSets>
+            <li>SelEth_Empyrean</li>
+        </hediffGiverSets>
+    </race>
+
+    <!--Organic tools/weapons, etc-->
+    <tools>
+        <li>
+            <label>left fist</label>
+            <capacities>
+            <li>Blunt</li>
+            </capacities>
+            <power>20</power>
+            <cooldownTime>4</cooldownTime>
+            <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+            <surpriseAttack>
+            <extraMeleeDamages>
+                <li>
+                <def>Stun</def>
+                <amount>30</amount>
+                </li>
+            </extraMeleeDamages>
+            </surpriseAttack>
+        </li>
+        <li>
+            <label>right fist</label>
+            <capacities>
+            <li>Blunt</li>
+            </capacities>
+            <power>20</power>
+            <cooldownTime>4</cooldownTime>
+            <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+            <surpriseAttack>
+            <extraMeleeDamages>
+                <li>
+                <def>Stun</def>
+                <amount>30</amount>
+                </li>
+            </extraMeleeDamages>
+            </surpriseAttack>
+        </li>
+        <li>
+            <label>teeth</label>
+            <capacities>
+            <li>Bite</li>
+            </capacities>
+            <power>30</power>
+            <cooldownTime>4</cooldownTime>
+            <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+            <chanceFactor>0.07</chanceFactor>
+            <soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+            <soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+        </li>
+        <li>
+            <label>head</label>
+            <capacities>
+            <li>Blunt</li>
+            </capacities>
+            <power>15</power>
+            <cooldownTime>4</cooldownTime>
+            <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+            <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+            <chanceFactor>0.2</chanceFactor>
+        </li>
+    </tools>
+
+    <recipes>
+      <li>ExciseCarcinoma</li>
+      <li>AdministerMechSerumHealer</li>
+      <li>RemoveBodyPart</li>
+      <li>Euthanize</li>
+      <li>Anesthetize</li>
+      <li>CureScaria</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+    </recipes>
+
+    <ingredient>
+      <mergeCompatibilityTags>
+        <li>HumanMeat</li>
+      </mergeCompatibilityTags>
+    </ingredient>
+
+</AlienRace.ThingDef_AlienRace>
+</defs>

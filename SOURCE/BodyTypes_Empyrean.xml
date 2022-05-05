@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <Defs>
+        <BodyTypeDef>
+            <defName>EmpyreanMale</defName>
+            <label>Male Empyrean</label>
+            <headOffset>(0.0, 0.165)</headOffset>
+            <bodyNakedGraphicPath>Things/Pawns/Empyrean/m_naked_empyrean</bodyNakedGraphicPath>
+            <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_YourRaceBody</bodyDessicatedGraphicPath>
+        </BodyTypeDef>
+    </Defs>
