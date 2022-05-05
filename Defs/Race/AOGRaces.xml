@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn" Abstract="true" Name="S_BaseGodAvatar">
+    <label>Godly Avatar</label>
+    <!-- Shared base pawn for gods - All information / stats here are shared by gods. Scroll down for individual god races-->
+
+    <statBases>
+    <!-- shared buffs -->
+        <MoveSpeed>6.5</MoveSpeed>
+        <HungerRateMultiplier>0.25</HungerRateMultiplier>
+        <PawnBeauty>2</PawnBeauty>
+        <MentalBreakThreshold>0</MentalBreakThreshold>
+        <WorkSpeedGlobal>1.5</WorkSpeedGlobal>
+        <RoyalFavorValue>3</RoyalFavorValue>
+        <IncomingDamageFactor>0.6</IncomingDamageFactor>
+
+    <!-- shared debuffs -->
+
+    <!-- shared other -->
+        <Mass>60</Mass>
+        <MeatAmount>75</MeatAmount>
+        <LeatherAmount>40</LeatherAmount>
+        <MarketValue>1750</MarketValue>
+    </statBases>
+
+    <race>
+        <leatherDef>Leather_Human</leatherDef>
+        <body>Human</body>
+        <thinkTreeMain>Humanlike</thinkTreeMain>
+        <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+        <intelligence>Humanlike</intelligence>
+        <makesFootprints>true</makesFootprints>
+        <nameCategory>HumanStandard</nameCategory>
+        <!--BUG!? Pawns always start at age 0, no way of increasing age up to max life expectancy.-->
+        <lifeExpectancy>5000</lifeExpectancy>
+        <useMeatFrom>Human</useMeatFrom>
+        <foodType>OmnivoreHuman</foodType>
+        <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+        <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+        <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+        <gestationPeriodDays>45</gestationPeriodDays>
+        <meatMarketValue>0.8</meatMarketValue>
+        <specialShadowData>
+            <volume>(0.3, 0.8, 0.4)</volume>
+            <offset>(0,0,-0.3)</offset>
+        </specialShadowData>
+        <hediffGiverSets>
+            <li>OrganicStandard</li>
+        </hediffGiverSets>
+        <litterSizeCurve>
+            <points>
+                <li>(0.5, 0)</li>
+                <li>(1, 1)</li>
+                <li>(1.01, 0.02)</li>
+                <li>(3.5, 0)</li>
+            </points>
+        </litterSizeCurve>
+        <lifeStageAges>
+            <li>
+            <def>HumanlikeAdult</def>
+            <minAge>0</minAge>
+            </li>
+        </lifeStageAges>
+        <ageGenerationCurve>
+            <points>
+            <li>(0.01,0)</li>
+            <li>(0.1,100)</li>
+            <li>(0.675,100)</li>
+            <li>(0.75,30)</li>
+            <li>(0.875,18)</li>
+            <li>(1,10)</li>
+            <li>(1.125,3)</li>
+            <li>(1.25,0)</li>
+            </points>
+        </ageGenerationCurve>
+    </race>
+
+    <!-- Race Tools / Abilities-->
+    <tools>
+        <li>
+            <label>left fist</label>
+            <capacities>
+            <li>Blunt</li>
+            </capacities>
+            <power>6</power>
+            <cooldownTime>2</cooldownTime>
+            <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+            <surpriseAttack>
+            <extraMeleeDamages>
+                <li>
+                <def>Stun</def>
+                <amount>10</amount>
+                </li>
+            </extraMeleeDamages>
+            </surpriseAttack>
+            <chanceFactor>0.2</chanceFactor>
+        </li>
+        <li>
+            <label>right fist</label>
+            <capacities>
+            <li>Blunt</li>
+            </capacities>
+            <power>6</power>
+            <cooldownTime>2</cooldownTime>
+            <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+            <surpriseAttack>
+            <extraMeleeDamages>
+                <li>
+                <def>Stun</def>
+                <amount>10</amount>
+                </li>
+            </extraMeleeDamages>
+            </surpriseAttack>
+            <chanceFactor>0.2</chanceFactor>
+        </li>
+        <li>
+            <label>teeth</label>
+            <capacities>
+            <li>Bite</li>
+            </capacities>
+            <power>6</power>
+            <cooldownTime>2</cooldownTime>
+            <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+            <chanceFactor>0.05</chanceFactor>
+        </li>
+        <li>
+            <label>head</label>
+            <capacities>
+            <li>Blunt</li>
+            </capacities>
+            <power>4</power>
+            <cooldownTime>2</cooldownTime>
+            <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+            <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+            <chanceFactor>0.1</chanceFactor>
+        </li>
+        <li>
+            <label>mind</label>
+            <capacities>
+            <li>Blunt</li>
+            </capacities>
+            <power>15</power>
+            <cooldownTime>30</cooldownTime>
+            <linkedBodyPartsGroup>Eyes</linkedBodyPartsGroup>
+            <surpriseAttack>
+            <extraMeleeDamages>
+                <li>
+                <def>Stun</def>
+                <amount>20</amount>
+                </li>
+            </extraMeleeDamages>
+            </surpriseAttack>
+        </li>
+    </tools>
+
+    <alienRace>
+        <generalSettings>
+            <maleGenderProbability>0.5</maleGenderProbability>
+            <immuneToAge>true</immuneToAge>
+            <immuneToXenophobia>true</immuneToXenophobia>
+            <minAgeForAdulthood>0</minAgeForAdulthood>
+
+            <alienPartGenerator>
+            	<customDrawSize>(1.2, 1.2)</customDrawSize>
+				<customPortraitDrawSize>(1, 1)</customPortraitDrawSize>
+
+                <!-- Give errors, still need graphic paths set up with custom graphics! 03/05/2022-->
+                <aliencrowntypes>
+                    <li>placeholder_head</li>
+                </aliencrowntypes>
+
+                <alienbodytypes>
+                    <li>Male</li>
+                    <li>Female</li>
+                    <li>Hulk</li>
+                    <li>Thin</li>
+                    <li>Fat</li>
+                </alienbodytypes>
+
+                <useGenderedHeads>false</useGenderedHeads>
+                <useGenderedBodies>false</useGenderedBodies>
+
+                <colorChannels>
+                    <li>
+                        <name>skin</name>
+                        <first Class="ColorGenerator_Options">
+                            <options>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(253, 239, 229, 255)</only>
+                                </li>
+                            </options>
+                        </first>
+                        <!--<second Class="ColorGenerator_Options">
+                            <options>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(0.500, 1.000, 0.000, 1.000)</only>
+                                </li>
+                            </options>
+                        </second>-->
+                    </li>
+
+                    <li>
+                    <!-- Tattoo colors are used to color the halos. Figure out how to replace this with a slider if possible, would be a lot cooler - otherwise predetermine colors. -->
+                        <name>tattoo</name>
+                        <first Class="ColorGenerator_Options">
+                            <options>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(255, 234, 160, 185)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(194, 17, 61, 185)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(31, 245, 53, 185)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(36, 196, 240, 185)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(215, 255, 253, 185)</only>
+                                </li>
+                            </options>
+                        </first>
+                    </li>
+
+                    <li>
+                        <name>hair</name>
+                        <first Class="ColorGenerator_Options">
+                            <options>
+                                <li>
+                                    <weight>5</weight>
+                                    <only>RGBA(1.0,1.0,1.0,1)</only>
+                                </li>
+                                <li>
+                                    <weight>4</weight>
+                                    <only>RGBA(0.93,0.79,0.61,1)</only>
+                                </li>
+                                <li>
+                                    <weight>2</weight>
+                                    <only>RGBA(0.76,0.57,0.33,1)</only>
+                                </li>
+                                <li>
+                                    <weight>1</weight>
+                                    <only>RGBA(0.52,0.33,0.18,1)</only>
+                                </li>
+                                <li>
+                                    <weight>1</weight>
+                                    <only>RGBA(0.35,0.23,0.13,1)</only>
+                                </li>
+                                <li>
+                                    <weight>1</weight>
+                                    <only>RGBA(0.3,0.2,0.1,1)</only>
+                                </li>
+                                <li>
+                                    <weight>1</weight>
+                                    <only>RGBA(0.25,0.2,0.15,1)</only>
+                                </li>
+                                <li>
+                                    <weight>1</weight>
+                                    <only>RGBA(0.31,0.28,0.26,1)</only>
+                                </li>
+                                <li>
+                                    <weight>1</weight>
+                                    <only>RGBA(0.2,0.2,0.2,1)</only>
+                                </li>
+                            </options>
+                        </first>
+                    </li>
+                </colorChannels>
+                    <bodyAddons>
+                        <li>
+                            <path>Placeholder/Halo/halo_a</path>
+                            <bodyPart>Head</bodyPart>
+                            <drawnInBed>false</drawnInBed>
+                            <inFrontOfBody>false</inFrontOfBody>
+                            <layerInvert>false</layerInvert>
+                            <colorChannel>tattoo</colorChannel>
+                            <drawSize>1</drawSize>
+                            <angle>0</angle>
+                            <offsets>
+                                <south>
+                                    <bodyTypes>
+                                        <Female>(0,0.4)</Female>
+                                        <Male>(0,0.4)</Male>
+                                        <Thin>(0,0.4)</Thin>
+                                        <Hulk>(0,0.45)</Hulk>
+                                        <Fat>(0,0.4)</Fat>
+                                    </bodyTypes>
+                                </south>
+                                <north>
+                                    <bodyTypes>
+                                        <Female>(0,0.4)</Female>
+                                        <Male>(0,0.4)</Male>
+                                        <Thin>(0,0.4)</Thin>
+                                        <Hulk>(0,0.45)</Hulk>
+                                        <Fat>(0,0.4)</Fat>
+                                    </bodyTypes>
+                                </north>
+                                <east>
+                                <!-- X offset needs refining - Same goes for the art assets. -->
+                                    <bodyTypes>
+                                        <Female>(0.45,0.65)</Female>
+                                        <Male>(0.45,0.65)</Male>
+                                        <Thin>(0.45,0.65)</Thin>
+                                        <Hulk>(0.45,0.7)</Hulk>
+                                        <Fat>(0.45,0.65)</Fat>
+                                    </bodyTypes>
+                                </east>
+                            </offsets>
+                        </li>
+                    </bodyAddons>
+            </alienPartGenerator>
+
+        </generalSettings>
+
+
+        <graphicPaths>
+            <li>
+                <body>Placeholder/Body/</body>
+                <head>Placeholder/Head/</head>
+            </li>
+        </graphicPaths>
+
+
+        <styleSettings>
+
+        </styleSettings>
+
+
+        <thoughtSettings>
+            <cannotReceiveThoughts>
+                <li>Pain</li>
+            </cannotReceiveThoughts>
+        </thoughtSettings>
+
+
+        <relationSettings>
+
+        </relationSettings>
+
+
+        <raceRestriction>
+
+        </raceRestriction>
+
+
+        <compatibility>
+            <isFlesh>true</isFlesh>
+            <isSentient>true</isSentient>
+            <hasBlood>true</hasBlood>
+        </compatibility>
+    </alienRace>
+
+</AlienRace.ThingDef_AlienRace>
+
+<AlienRace.ThingDef_AlienRace ParentName="S_BaseGodAvatar">
+    <!--Primordial God -->
+    <defName>S_GodPrimordial</defName>
+    <description>Primordial gods are beings who are born of the void, hailing from before the creation of the universe and stars</description>
+    
+    <statBases>
+        <ComfyTemperatureMin>-200</ComfyTemperatureMin>
+        <ComfyTemperatureMax>1800</ComfyTemperatureMax>
+    </statBases>
+
+    <alienRace>
+        <generalSettings>
+            <!--<xenophobistTowards>
+                <li>OtherGod</li>
+            </xenophobistTowards>-->
+        </generalSettings>
+
+        <compatibility>
+            <isFlesh>true</isFlesh>
+            <isSentient>true</isSentient>
+            <hasBlood>true</hasBlood>
+        </compatibility>
+    </alienRace>
+
+    <race>
+        <hasGenders>true</hasGenders>
+        <baseBodySize>1.25</baseBodySize>
+        <baseHealthScale>2.4</baseHealthScale>
+        <manhunterOnDamageChance>0</manhunterOnDamageChance>
+        <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+    </race>
+</AlienRace.ThingDef_AlienRace>
+
+<AlienRace.ThingDef_AlienRace ParentName="S_BaseGodAvatar">
+    <!--Celestial God -->
+    <defName>S_GodCelestial</defName>
+    <description>Celestial gods are beings who came into existence with the birth of the first galaxies.</description>
+    
+    <statBases>
+        <ComfyTemperatureMin>-600</ComfyTemperatureMin>
+        <ComfyTemperatureMax>1200</ComfyTemperatureMax>
+    </statBases>  
+
+    <alienRace>
+        <generalSettings>
+            <!--<xenophobistTowards>
+                <li>OtherGod</li>
+            </xenophobistTowards>-->
+        </generalSettings>
+
+        <compatibility>
+            <isFlesh>true</isFlesh>
+            <isSentient>true</isSentient>
+            <hasBlood>true</hasBlood>
+        </compatibility>
+    </alienRace>
+
+    <race>
+        <hasGenders>true</hasGenders>
+        <baseBodySize>1.1</baseBodySize>
+        <baseHealthScale>1.8</baseHealthScale>
+        <manhunterOnDamageChance>0</manhunterOnDamageChance>
+        <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+    </race>
+</AlienRace.ThingDef_AlienRace>
+
+<AlienRace.ThingDef_AlienRace ParentName="S_BaseGodAvatar">
+    <!--Empyrean God -->
+    <defName>S_GodEmpyrean</defName>
+    <description>Empyrean gods are beings who were given birth to by primordial or celestial gods.</description>
+    
+    <statBases>
+        <ComfyTemperatureMin>-600</ComfyTemperatureMin>
+        <ComfyTemperatureMax>1200</ComfyTemperatureMax>
+    </statBases>  
+
+    <alienRace>
+        <generalSettings>
+            <!--<xenophobistTowards>
+                <li>OtherGod</li>
+            </xenophobistTowards>-->
+        </generalSettings>
+
+        <compatibility>
+            <isFlesh>true</isFlesh>
+            <isSentient>true</isSentient>
+            <hasBlood>true</hasBlood>
+        </compatibility>
+    </alienRace>
+
+    <race>
+        <hasGenders>true</hasGenders>
+        <baseBodySize>1.1</baseBodySize>
+        <baseHealthScale>1.8</baseHealthScale>
+        <manhunterOnDamageChance>0</manhunterOnDamageChance>
+        <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+    </race>
+</AlienRace.ThingDef_AlienRace>
+
+<AlienRace.ThingDef_AlienRace ParentName="S_BaseGodAvatar">
+    <!--Lesser God -->
+    <defName>S_GodLesser</defName>
+    <description>Lesser gods are creatures who inherited divine blood from one of their parents, or have ascended to godhood through their actions. They are often seen ruling lesser domains or planetary regions.</description>
+    
+    <statBases>
+        <ComfyTemperatureMin>-250</ComfyTemperatureMin>
+        <ComfyTemperatureMax>900</ComfyTemperatureMax>
+    </statBases>  
+
+    <alienRace>
+        <generalSettings>
+            <!--<xenophobistTowards>
+                <li>OtherGod</li>
+            </xenophobistTowards>-->
+        </generalSettings>
+
+        <compatibility>
+            <isFlesh>true</isFlesh>
+            <isSentient>true</isSentient>
+            <hasBlood>true</hasBlood>
+        </compatibility>
+    </alienRace>
+
+    <race>
+        <hasGenders>true</hasGenders>
+        <baseBodySize>1.1</baseBodySize>
+        <baseHealthScale>1.75</baseHealthScale>
+        <manhunterOnDamageChance>0.05</manhunterOnDamageChance>
+        <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+    </race>
+</AlienRace.ThingDef_AlienRace>
+
+</Defs>

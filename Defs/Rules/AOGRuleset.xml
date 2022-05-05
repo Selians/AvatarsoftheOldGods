@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<!-- Naming conventions for the divine races-->
+    <RulePackDef>
+        <defName>NamerAOGPawnNames</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[AOGlist]</li>
+                <li>r_name->[AOGlist] [AOGlist]</li>
+                <li>r_name->The [AOGlist]</li>
+            </rulesStrings>
+            <rulesFiles>
+                <li>AOGlist->Names/AOGNames</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>NamerAOGColonyNames</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->The [AOGlist]</li>
+            </rulesStrings>
+            <rulesFiles>
+                <li>AOGlist->Names/AOGNames</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+</Defs>

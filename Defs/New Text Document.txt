@@ -1,0 +1,141 @@
+Command line arguments: -savedatafolder=C:\Users\Marce\AppData\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Verse.Log:Message (string)
+Verse.Root:CheckGlobalInit ()
+Verse.Root:Start ()
+Verse.Root_Entry:Start ()
+
+RimWorld 1.3.3326 rev562
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Verse.Log:Message (string)
+RimWorld.VersionControl:LogVersionNumber ()
+Verse.Root:CheckGlobalInit ()
+Verse.Root:Start ()
+Verse.Root_Entry:Start ()
+
+Save data folder overridden to C:\Users\Marce\AppData\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Verse.Log:Message (string)
+Verse.GenFilePaths:get_SaveDataFolderPath ()
+Verse.GenFilePaths:FolderUnderSaveData (string)
+Verse.GenFilePaths:get_ConfigFolderPath ()
+Verse.GenFilePaths:get_PrefsFilePath ()
+Verse.Prefs:Init ()
+Verse.Root:CheckGlobalInit ()
+Verse.Root:Start ()
+Verse.Root_Entry:Start ()
+
+Could not resolve cross-reference to Verse.PawnKindDef named PrimordialTemplate (wanter=kindDefs)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) Verse.Log:Verse.Log.Error_Patch1 (string)
+Verse.DirectXmlCrossRefLoader:TryResolveDef<Verse.PawnKindDef> (string,Verse.FailMode,object)
+Verse.DirectXmlCrossRefLoader/WantedRefForList`1<Verse.PawnKindDef>:TryResolve (Verse.FailMode)
+Verse.DirectXmlCrossRefLoader/<>c__DisplayClass15_1:<ResolveAllWantedCrossReferences>b__0 (Verse.DirectXmlCrossRefLoader/WantedRef)
+Verse.GenThreading/<>c__DisplayClass7_1`1<Verse.DirectXmlCrossRefLoader/WantedRef>:<ParallelForEach>b__0 (object)
+System.Threading.QueueUserWorkItemCallback:WaitCallback_Context (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.QueueUserWorkItemCallback:System.Threading.IThreadPoolWorkItem.ExecuteWorkItem ()
+System.Threading.ThreadPoolWorkQueue:Dispatch ()
+System.Threading._ThreadPoolWaitCallback:PerformWaitCallback ()
+
+Alien race successfully completed 180 patches with harmony.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) Verse.Log:Verse.Log.Message_Patch1 (string)
+AlienRace.HarmonyPatches:.cctor ()
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+Verse.StaticConstructorOnStartupUtility:CallAll ()
+Verse.PlayDataLoader/<>c:<DoPlayLoad>b__4_3 ()
+Verse.LongEventHandler:ExecuteToExecuteWhenFinished ()
+Verse.LongEventHandler:UpdateCurrentAsynchronousEvent ()
+Verse.LongEventHandler:LongEventsUpdate (bool&)
+Verse.Root:Update ()
+Verse.Root_Entry:Update ()
+
+Getting random element from empty collection.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) Verse.Log:Verse.Log.Warning_Patch1 (string)
+Verse.GenCollection:RandomElement<Verse.PawnKindDef> (System.Collections.Generic.IEnumerable`1<Verse.PawnKindDef>)
+AlienRace.HarmonyPatches:NewGeneratedStartingPawnHelper (Verse.PawnKindDef)
+(wrapper dynamic-method) Verse.StartingPawnUtility:Verse.StartingPawnUtility.NewGeneratedStartingPawn_Patch0 ()
+RimWorld.ScenPart_ConfigPage_ConfigureStartingPawns:PostIdeoChosen ()
+RimWorld.Scenario:PostIdeoChosen ()
+RimWorld.Page_ChooseIdeoPreset:DoClassic ()
+RimWorld.Page_ChooseIdeoPreset:DoNext ()
+RimWorld.Page:DoBottomButtons (UnityEngine.Rect,string,string,System.Action,bool,bool)
+RimWorld.Page_ChooseIdeoPreset:DoWindowContents (UnityEngine.Rect)
+Verse.Window:InnerWindowOnGUI (int)
+UnityEngine.GUI:CallWindowDelegate (UnityEngine.GUI/WindowFunction,int,int,UnityEngine.GUISkin,int,single,single,UnityEngine.GUIStyle)
+
+Error while generating pawn. Rethrowing. Exception: System.NullReferenceException: Object reference not set to an instance of an object
+  at (wrapper dynamic-method) Verse.PawnGenerator.Verse.PawnGenerator.TryGenerateNewPawnInternal_Patch0(Verse.PawnGenerationRequest&,string&,bool,bool)
+  at Verse.PawnGenerator.GenerateNewPawnInternal (Verse.PawnGenerationRequest& request) [0x00094] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.PawnGenerator.GenerateOrRedressPawnInternal (Verse.PawnGenerationRequest request) [0x00183] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at (wrapper dynamic-method) Verse.PawnGenerator.Verse.PawnGenerator.GeneratePawn_Patch1(Verse.PawnGenerationRequest)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) Verse.Log:Verse.Log.Error_Patch1 (string)
+(wrapper dynamic-method) Verse.PawnGenerator:Verse.PawnGenerator.GeneratePawn_Patch1 (Verse.PawnGenerationRequest)
+(wrapper dynamic-method) Verse.StartingPawnUtility:Verse.StartingPawnUtility.NewGeneratedStartingPawn_Patch0 ()
+RimWorld.ScenPart_ConfigPage_ConfigureStartingPawns:PostIdeoChosen ()
+RimWorld.Scenario:PostIdeoChosen ()
+RimWorld.Page_ChooseIdeoPreset:DoClassic ()
+RimWorld.Page_ChooseIdeoPreset:DoNext ()
+RimWorld.Page:DoBottomButtons (UnityEngine.Rect,string,string,System.Action,bool,bool)
+RimWorld.Page_ChooseIdeoPreset:DoWindowContents (UnityEngine.Rect)
+Verse.Window:InnerWindowOnGUI (int)
+UnityEngine.GUI:CallWindowDelegate (UnityEngine.GUI/WindowFunction,int,int,UnityEngine.GUISkin,int,single,single,UnityEngine.GUIStyle)
+
+There was an exception thrown by the PawnGenerator during generating a starting pawn. Trying one more time...
+Exception: System.NullReferenceException: Object reference not set to an instance of an object
+  at (wrapper dynamic-method) Verse.PawnGenerator.Verse.PawnGenerator.TryGenerateNewPawnInternal_Patch0(Verse.PawnGenerationRequest&,string&,bool,bool)
+  at Verse.PawnGenerator.GenerateNewPawnInternal (Verse.PawnGenerationRequest& request) [0x00094] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.PawnGenerator.GenerateOrRedressPawnInternal (Verse.PawnGenerationRequest request) [0x00183] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at (wrapper dynamic-method) Verse.PawnGenerator.Verse.PawnGenerator.GeneratePawn_Patch1(Verse.PawnGenerationRequest)
+  at (wrapper dynamic-method) Verse.StartingPawnUtility.Verse.StartingPawnUtility.NewGeneratedStartingPawn_Patch0()
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) Verse.Log:Verse.Log.Error_Patch1 (string)
+(wrapper dynamic-method) Verse.StartingPawnUtility:Verse.StartingPawnUtility.NewGeneratedStartingPawn_Patch0 ()
+RimWorld.ScenPart_ConfigPage_ConfigureStartingPawns:PostIdeoChosen ()
+RimWorld.Scenario:PostIdeoChosen ()
+RimWorld.Page_ChooseIdeoPreset:DoClassic ()
+RimWorld.Page_ChooseIdeoPreset:DoNext ()
+RimWorld.Page:DoBottomButtons (UnityEngine.Rect,string,string,System.Action,bool,bool)
+RimWorld.Page_ChooseIdeoPreset:DoWindowContents (UnityEngine.Rect)
+Verse.Window:InnerWindowOnGUI (int)
+UnityEngine.GUI:CallWindowDelegate (UnityEngine.GUI/WindowFunction,int,int,UnityEngine.GUISkin,int,single,single,UnityEngine.GUIStyle)
+
+Error while generating pawn. Rethrowing. Exception: System.NullReferenceException: Object reference not set to an instance of an object
+  at (wrapper dynamic-method) Verse.PawnGenerator.Verse.PawnGenerator.TryGenerateNewPawnInternal_Patch0(Verse.PawnGenerationRequest&,string&,bool,bool)
+  at Verse.PawnGenerator.GenerateNewPawnInternal (Verse.PawnGenerationRequest& request) [0x00094] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.PawnGenerator.GenerateOrRedressPawnInternal (Verse.PawnGenerationRequest request) [0x00183] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at (wrapper dynamic-method) Verse.PawnGenerator.Verse.PawnGenerator.GeneratePawn_Patch1(Verse.PawnGenerationRequest)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) Verse.Log:Verse.Log.Error_Patch1 (string)
+(wrapper dynamic-method) Verse.PawnGenerator:Verse.PawnGenerator.GeneratePawn_Patch1 (Verse.PawnGenerationRequest)
+(wrapper dynamic-method) Verse.StartingPawnUtility:Verse.StartingPawnUtility.NewGeneratedStartingPawn_Patch0 ()
+RimWorld.ScenPart_ConfigPage_ConfigureStartingPawns:PostIdeoChosen ()
+RimWorld.Scenario:PostIdeoChosen ()
+RimWorld.Page_ChooseIdeoPreset:DoClassic ()
+RimWorld.Page_ChooseIdeoPreset:DoNext ()
+RimWorld.Page:DoBottomButtons (UnityEngine.Rect,string,string,System.Action,bool,bool)
+RimWorld.Page_ChooseIdeoPreset:DoWindowContents (UnityEngine.Rect)
+Verse.Window:InnerWindowOnGUI (int)
+UnityEngine.GUI:CallWindowDelegate (UnityEngine.GUI/WindowFunction,int,int,UnityEngine.GUISkin,int,single,single,UnityEngine.GUIStyle)
+
+Exception filling window for RimWorld.Page_ChooseIdeoPreset: System.NullReferenceException: Object reference not set to an instance of an object
+  at (wrapper dynamic-method) Verse.PawnGenerator.Verse.PawnGenerator.TryGenerateNewPawnInternal_Patch0(Verse.PawnGenerationRequest&,string&,bool,bool)
+  at Verse.PawnGenerator.GenerateNewPawnInternal (Verse.PawnGenerationRequest& request) [0x00094] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.PawnGenerator.GenerateOrRedressPawnInternal (Verse.PawnGenerationRequest request) [0x00183] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at (wrapper dynamic-method) Verse.PawnGenerator.Verse.PawnGenerator.GeneratePawn_Patch1(Verse.PawnGenerationRequest)
+  at (wrapper dynamic-method) Verse.StartingPawnUtility.Verse.StartingPawnUtility.NewGeneratedStartingPawn_Patch0()
+  at RimWorld.ScenPart_ConfigPage_ConfigureStartingPawns.PostIdeoChosen () [0x000ad] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Scenario.PostIdeoChosen () [0x00014] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Page_ChooseIdeoPreset.DoClassic () [0x00060] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Page_ChooseIdeoPreset.DoNext () [0x00035] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Page.DoBottomButtons (UnityEngine.Rect rect, System.String nextLabel, System.String midLabel, System.Action midAct, System.Boolean showNext, System.Boolean doNextOnKeypress) [0x000e8] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Page_ChooseIdeoPreset.DoWindowContents (UnityEngine.Rect inRect) [0x003b7] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <99518a644a3e4a7ea3fde566568df84a>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) Verse.Log:Verse.Log.Error_Patch1 (string)
+Verse.Window:InnerWindowOnGUI (int)
+UnityEngine.GUI:CallWindowDelegate (UnityEngine.GUI/WindowFunction,int,int,UnityEngine.GUISkin,int,single,single,UnityEngine.GUIStyle)

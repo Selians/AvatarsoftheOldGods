@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModsConfigData>
+    <version>1.3.3326 rev562</version>
+    <activeMods>
+        <li>brrainz.harmony</li>
+        <li>ludeon.rimworld</li>
+        <li>bs.betterlog</li>
+        <li>ludeon.rimworld.royalty</li>
+        <li>ludeon.rimworld.ideology</li>
+        <li>unlimitedhugs.hugslib</li>
+        <li>erdelf.humanoidalienraces</li>
+        <li>selians.races.oldgodstemplate</li>
+        <li>edb.preparecarefully</li>
+        <li>neronix17.toolbox</li>
+        <li>oskarpotocki.vanillafactionsexpanded.core</li>
+        <li>brrainz.cameraplus</li>
+    </activeMods>
+    <knownExpansions>
+        <li>ludeon.rimworld</li>
+        <li>ludeon.rimworld.royalty</li>
+        <li>ludeon.rimworld.ideology</li>
+    </knownExpansions>
+</ModsConfigData>
