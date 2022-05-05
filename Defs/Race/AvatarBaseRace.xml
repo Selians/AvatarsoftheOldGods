@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn" Abstract="true" Name="S_BaseGodAvatar">
+    <label>Godly Avatar</label>
+    <!-- Shared base pawn for gods - All information / stats here are shared by gods. Scroll down for individual god races-->
+
+    <statBases>
+    <!-- shared buffs -->
+        <MoveSpeed>6.5</MoveSpeed>
+        <HungerRateMultiplier>0.25</HungerRateMultiplier>
+        <PawnBeauty>3</PawnBeauty>
+        <MentalBreakThreshold>0</MentalBreakThreshold>
+        <WorkSpeedGlobal>1.5</WorkSpeedGlobal>
+        <RoyalFavorValue>4</RoyalFavorValue>
+        <IncomingDamageFactor>0.6</IncomingDamageFactor>
+
+    <!-- shared debuffs -->
+
+    <!-- shared other -->
+        <Mass>80</Mass>
+        <MeatAmount>60</MeatAmount>
+        <LeatherAmount>25</LeatherAmount>
+        <MarketValue>5000</MarketValue>
+    </statBases>
+
+    <race>
+        <nameGenerator>NamerAOGPawnNames</nameGenerator>
+        <leatherDef>Leather_Human</leatherDef>
+        <body>Human</body>
+        <thinkTreeMain>Humanlike</thinkTreeMain>
+        <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+        <intelligence>Humanlike</intelligence>
+        <makesFootprints>true</makesFootprints>
+        <nameCategory>HumanStandard</nameCategory>
+        <!--BUG!? Pawns always start at age 0, no way of increasing age up to max life expectancy.-->
+        <lifeExpectancy>5000</lifeExpectancy>
+        <useMeatFrom>Human</useMeatFrom>
+        <foodType>OmnivoreHuman</foodType>
+        <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+        <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+        <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+        <gestationPeriodDays>45</gestationPeriodDays>
+        <meatMarketValue>0.8</meatMarketValue>
+        <specialShadowData>
+            <volume>(0.3, 0.8, 0.4)</volume>
+            <offset>(0,0,-0.3)</offset>
+        </specialShadowData>
+        <hediffGiverSets>
+            <li>OrganicStandard</li>
+        </hediffGiverSets>
+        <litterSizeCurve>
+            <points>
+                <li>(0.5, 0)</li>
+                <li>(1, 1)</li>
+                <li>(1.01, 0.02)</li>
+                <li>(3.5, 0)</li>
+            </points>
+        </litterSizeCurve>
+        <lifeStageAges>
+            <li>
+            <def>HumanlikeAdult</def>
+            <minAge>0</minAge>
+            </li>
+        </lifeStageAges>
+        <ageGenerationCurve>
+            <points>
+            <li>(0.01,0)</li>
+            <li>(0.1,100)</li>
+            <li>(0.675,100)</li>
+            <li>(0.75,30)</li>
+            <li>(0.875,18)</li>
+            <li>(1,10)</li>
+            <li>(1.125,3)</li>
+            <li>(1.25,0)</li>
+            </points>
+        </ageGenerationCurve>
+    </race>
+
+    <!-- Race Tools / Abilities-->
+    <tools>
+        <li>
+            <label>left fist</label>
+            <capacities>
+            <li>Blunt</li>
+            </capacities>
+            <power>6</power>
+            <cooldownTime>2</cooldownTime>
+            <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+            <surpriseAttack>
+            <extraMeleeDamages>
+                <li>
+                <def>Stun</def>
+                <amount>10</amount>
+                </li>
+            </extraMeleeDamages>
+            </surpriseAttack>
+            <chanceFactor>0.2</chanceFactor>
+        </li>
+        <li>
+            <label>right fist</label>
+            <capacities>
+            <li>Blunt</li>
+            </capacities>
+            <power>6</power>
+            <cooldownTime>2</cooldownTime>
+            <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+            <surpriseAttack>
+            <extraMeleeDamages>
+                <li>
+                <def>Stun</def>
+                <amount>10</amount>
+                </li>
+            </extraMeleeDamages>
+            </surpriseAttack>
+            <chanceFactor>0.2</chanceFactor>
+        </li>
+        <li>
+            <label>teeth</label>
+            <capacities>
+            <li>Bite</li>
+            </capacities>
+            <power>6</power>
+            <cooldownTime>2</cooldownTime>
+            <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+            <chanceFactor>0.05</chanceFactor>
+        </li>
+        <li>
+            <label>head</label>
+            <capacities>
+            <li>Blunt</li>
+            </capacities>
+            <power>4</power>
+            <cooldownTime>2</cooldownTime>
+            <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+            <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+            <chanceFactor>0.1</chanceFactor>
+        </li>
+        <li>
+            <label>mind</label>
+            <capacities>
+            <li>Blunt</li>
+            </capacities>
+            <power>15</power>
+            <cooldownTime>30</cooldownTime>
+            <linkedBodyPartsGroup>Eyes</linkedBodyPartsGroup>
+            <surpriseAttack>
+            <extraMeleeDamages>
+                <li>
+                <def>Stun</def>
+                <amount>20</amount>
+                </li>
+            </extraMeleeDamages>
+            </surpriseAttack>
+        </li>
+    </tools>
+
+    <alienRace>
+        <generalSettings>
+            <humanRecipeImport>true</humanRecipeImport>
+            <maxDamageForSocialfight>4</maxDamageForSocialfight>
+            <maleGenderProbability>0.5</maleGenderProbability>
+            <immuneToAge>true</immuneToAge>
+            <immuneToXenophobia>true</immuneToXenophobia>
+            <minAgeForAdulthood>0</minAgeForAdulthood>
+        </generalSettings>
+
+        <styleSettings>
+        </styleSettings>
+
+
+        <thoughtSettings>
+            <cannotReceiveThoughts>
+                <li>Pain</li>
+            </cannotReceiveThoughts>
+        </thoughtSettings>
+
+        <relationSettings>
+        </relationSettings>
+
+        <raceRestriction>
+        </raceRestriction>
+
+        <compatibility>
+        </compatibility>
+    </alienRace>
+
+</AlienRace.ThingDef_AlienRace>
+
+</Defs>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <FactionDef>
+		<defName>AOGPlayerFaction</defName>
+		<label>Avatars of the old gods</label>
+		<description>A faction consisting of avatars of the old gods</description>
+		<basicMemberKind>LesserPK</basicMemberKind>
+		<pawnSingular>God</pawnSingular>
+		<pawnsPlural>Gods</pawnsPlural>
+		<isPlayer>true</isPlayer>
+
+		<!-- red -->
+		<colorSpectrum>
+			<li>(153, 51, 0)</li>
+			<li>(204, 153, 0)</li>
+			<li>(102, 102, 51)</li>
+		</colorSpectrum>
+
+		<factionIconPath>Icons/Beaver</factionIconPath>
+		<settlementTexturePath>Icons/Beaver</settlementTexturePath>
+		<settlementNameMaker>NamerAOGColonyNames</settlementNameMaker>
+		<factionNameMaker>NamerAOGColonyNames</factionNameMaker>
+		<playerInitialSettlementNameMaker>NamerAOGColonyNames</playerInitialSettlementNameMaker>
+
+        <backstoryFilters>
+		<!-- BUG! Still getting other backstories as well. Selecting/changing adult story leads to backstory becoming disabled. -->
+			<li>
+				<categories>
+					<li>DivineBackstory</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+
+		<techLevel>Spacer</techLevel>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>		
+
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+				<li>Hyperweave</li>
+				<li>Synthread</li>
+				<li>DevilstrandCloth</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<raidLootValueFromPointsCurve>
+		  <points>
+			<li>(35,     15)</li>
+			<li>(100,   120)</li>
+			<li>(1000,  500)</li>
+			<li>(2000,  800)</li>
+			<li>(4000, 1000)</li>
+		  </points>
+		</raidLootValueFromPointsCurve>
+	</FactionDef>
+</Defs>
