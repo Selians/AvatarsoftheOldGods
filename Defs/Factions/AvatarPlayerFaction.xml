@@ -4,9 +4,9 @@
 		<defName>AOGPlayerFaction</defName>
 		<label>Avatars of the old gods</label>
 		<description>A faction consisting of avatars of the old gods</description>
-		<basicMemberKind>LesserPK</basicMemberKind>
-		<pawnSingular>God</pawnSingular>
-		<pawnsPlural>Gods</pawnsPlural>
+		<basicMemberKind>EmpyreanPK</basicMemberKind>
+		<pawnSingular>Avatar</pawnSingular>
+		<pawnsPlural>Avatars</pawnsPlural>
 		<isPlayer>true</isPlayer>
 
 		<!-- red -->

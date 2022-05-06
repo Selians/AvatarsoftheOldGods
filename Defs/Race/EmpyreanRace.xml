@@ -145,7 +145,8 @@
                     <bodyAddons>
                     <!-- DIVINE SIGIL -->
                         <li>
-                            <path>Placeholder/Halo/halo_a</path>
+                            <path>Empyrean/Sigils/Sigil</path>
+                            <shaderType>Transparent</shaderType>
                             <bodyPart>Head</bodyPart>
                             <drawnInBed>false</drawnInBed>
                             <inFrontOfBody>false</inFrontOfBody>
@@ -187,12 +188,16 @@
                         <!-- DIVINE SIGHT -->
                         <li>
                             <path>Empyrean/Eyes/sight_emp</path>
+                            <shaderType>Transparent</shaderType>
                             <bodyPart>Head</bodyPart>
                             <drawnInBed>true</drawnInBed>
                             <inFrontOfBody>true</inFrontOfBody>
                             <layerInvert>true</layerInvert>
                             <colorChannel>tattoo</colorChannel>
                             <alignWithHead>true</alignWithHead>
+                            <hiddenUnderApparelFor>
+                                <li>FullHead</li>
+                            </hiddenUnderApparelFor>
                             <drawSize>1</drawSize>
                             <angle>0</angle>
                             <offsets>
