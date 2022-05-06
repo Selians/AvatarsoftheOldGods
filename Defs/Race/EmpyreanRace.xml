@@ -145,7 +145,7 @@
                     <bodyAddons>
                     <!-- DIVINE SIGIL -->
                         <li>
-                            <path>Empyrean/Sigils/Sigil</path>
+                            <path>Effects/Halo/Halo</path>
                             <shaderType>Transparent</shaderType>
                             <bodyPart>Head</bodyPart>
                             <drawnInBed>false</drawnInBed>
@@ -187,7 +187,7 @@
                         </li>
                         <!-- DIVINE SIGHT -->
                         <li>
-                            <path>Empyrean/Eyes/sight_emp</path>
+                            <path>Effects/Sight/sight_empyrean</path>
                             <shaderType>Transparent</shaderType>
                             <bodyPart>Head</bodyPart>
                             <drawnInBed>true</drawnInBed>
@@ -238,7 +238,7 @@
         <graphicPaths>
             <li>
                 <body>Empyrean/Body/</body>
-                <head>Empyrean/Head/</head>
+                <head>Primordial/Head/</head>
             </li>
         </graphicPaths>
 

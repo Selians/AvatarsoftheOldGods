@@ -24,8 +24,6 @@
                     <li>f_pointy</li>
                     <li>f_wide</li>
                     <li>m_average</li>
-                    <li>m_narrow</li>
-                    <li>m_wide</li>
                 </aliencrowntypes>
 
                 <alienbodytypes>
@@ -138,7 +136,7 @@
                     <bodyAddons>
                     <!-- PRIMAL SIGIL -->
                         <li>
-                            <path>Primordial/Sigil/sigil</path>
+                            <path>Effects/Sigil/sigil</path>
                             <shaderType>Transparent</shaderType>
                             <alignWithHead>true</alignWithHead>
                             <bodyPart>Head</bodyPart>
@@ -185,7 +183,7 @@
                         <!-- PRIMAL SIGHT -->
                         <!-- Use Empyrean textures while wip-->
                         <li>
-                            <path>Empyrean/Eyes/sight_emp</path>
+                            <path>Effects/Sight/sight_primordial</path>
                             <shaderType>Transparent</shaderType>
                             <bodyPart>Head</bodyPart>
                             <drawnInBed>true</drawnInBed>
