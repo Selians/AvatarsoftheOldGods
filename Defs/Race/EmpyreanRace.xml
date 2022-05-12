@@ -143,48 +143,6 @@
                     </li>
                 </colorChannels>
                     <bodyAddons>
-                    <!-- DIVINE SIGIL -->
-                        <li>
-                            <path>Effects/Halo/Halo</path>
-                            <shaderType>Transparent</shaderType>
-                            <bodyPart>Head</bodyPart>
-                            <drawnInBed>false</drawnInBed>
-                            <inFrontOfBody>false</inFrontOfBody>
-                            <layerInvert>false</layerInvert>
-                            <colorChannel>tattoo</colorChannel>
-                            <drawSize>1</drawSize>
-                            <angle>0</angle>
-                            <offsets>
-                                <south>
-                                    <bodyTypes>
-                                        <Female>(0,0.4)</Female>
-                                        <Male>(0,0.4)</Male>
-                                        <Thin>(0,0.4)</Thin>
-                                        <Hulk>(0,0.45)</Hulk>
-                                        <Fat>(0,0.4)</Fat>
-                                    </bodyTypes>
-                                </south>
-                                <north>
-                                    <bodyTypes>
-                                        <Female>(0,0.4)</Female>
-                                        <Male>(0,0.4)</Male>
-                                        <Thin>(0,0.4)</Thin>
-                                        <Hulk>(0,0.45)</Hulk>
-                                        <Fat>(0,0.4)</Fat>
-                                    </bodyTypes>
-                                </north>
-                                <east>
-                                <!-- X offset needs refining - Same goes for the art assets. -->
-                                    <bodyTypes>
-                                        <Female>(0.45,0.65)</Female>
-                                        <Male>(0.45,0.65)</Male>
-                                        <Thin>(0.45,0.65)</Thin>
-                                        <Hulk>(0.45,0.7)</Hulk>
-                                        <Fat>(0.45,0.65)</Fat>
-                                    </bodyTypes>
-                                </east>
-                            </offsets>
-                        </li>
                         <!-- DIVINE SIGHT -->
                         <li>
                             <path>Effects/Sight/sight_empyrean</path>
@@ -231,6 +189,48 @@
                                 </east>
                             </offsets>
                         </li>
+                        <!-- DIVINE SIGIL -->
+                        <li>
+                            <path>Effects/Halo/Halo</path>
+                            <shaderType>Transparent</shaderType>
+                            <bodyPart>Head</bodyPart>
+                            <drawnInBed>false</drawnInBed>
+                            <inFrontOfBody>false</inFrontOfBody>
+                            <layerInvert>false</layerInvert>
+                            <colorChannel>tattoo</colorChannel>
+                            <drawSize>1</drawSize>
+                            <angle>0</angle>
+                            <offsets>
+                                <south>
+                                    <bodyTypes>
+                                        <Female>(0,0.4)</Female>
+                                        <Male>(0,0.4)</Male>
+                                        <Thin>(0,0.4)</Thin>
+                                        <Hulk>(0,0.45)</Hulk>
+                                        <Fat>(0,0.4)</Fat>
+                                    </bodyTypes>
+                                </south>
+                                <north>
+                                    <bodyTypes>
+                                        <Female>(0,0.4)</Female>
+                                        <Male>(0,0.4)</Male>
+                                        <Thin>(0,0.4)</Thin>
+                                        <Hulk>(0,0.45)</Hulk>
+                                        <Fat>(0,0.4)</Fat>
+                                    </bodyTypes>
+                                </north>
+                                <east>
+                                <!-- X offset needs refining - Same goes for the art assets. -->
+                                    <bodyTypes>
+                                        <Female>(0.45,0.65)</Female>
+                                        <Male>(0.45,0.65)</Male>
+                                        <Thin>(0.45,0.65)</Thin>
+                                        <Hulk>(0.45,0.7)</Hulk>
+                                        <Fat>(0.45,0.65)</Fat>
+                                    </bodyTypes>
+                                </east>
+                            </offsets>
+                        </li>
                     </bodyAddons>
             </alienPartGenerator>
         </generalSettings>
@@ -238,7 +238,7 @@
         <graphicPaths>
             <li>
                 <body>Empyrean/Body/</body>
-                <head>Primordial/Head/</head>
+                <head>Empyrean/Head/</head>
             </li>
         </graphicPaths>
 

@@ -134,7 +134,53 @@
                     </li>
                 </colorChannels>
                     <bodyAddons>
-                    <!-- PRIMAL SIGIL -->
+                        <!-- PRIMAL SIGHT -->
+                        <!-- Use Empyrean textures while wip-->
+                        <li>
+                            <path>Effects/Sight/sight_primordial</path>
+                            <shaderType>Transparent</shaderType>
+                            <bodyPart>Head</bodyPart>
+                            <drawnInBed>true</drawnInBed>
+                            <inFrontOfBody>true</inFrontOfBody>
+                            <layerInvert>true</layerInvert>
+                            <colorChannel>tattoo</colorChannel>
+                            <alignWithHead>true</alignWithHead>
+                            <hiddenUnderApparelFor>
+                                <li>FullHead</li>
+                            </hiddenUnderApparelFor>
+                            <drawSize>1</drawSize>
+                            <angle>0</angle>
+                            <offsets>
+                                <south>
+                                    <bodyTypes>
+                                        <Female>(0,0)</Female>
+                                        <Male>(0,0)</Male>
+                                        <Thin>(0,0)</Thin>
+                                        <Hulk>(0,0)</Hulk>
+                                        <Fat>(0,0)</Fat>
+                                    </bodyTypes>
+                                </south>
+                                <north>
+                                    <bodyTypes>
+                                        <Female>(0,0)</Female>
+                                        <Male>(0,0)</Male>
+                                        <Thin>(0,0)</Thin>
+                                        <Hulk>(0,0)</Hulk>
+                                        <Fat>(0,0)</Fat>
+                                    </bodyTypes>
+                                </north>
+                                <east>
+                                    <bodyTypes>
+                                        <Female>(0,0)</Female>
+                                        <Male>(0,0)</Male>
+                                        <Thin>(0,0)</Thin>
+                                        <Hulk>(0,0)</Hulk>
+                                        <Fat>(0,0)</Fat>
+                                    </bodyTypes>
+                                </east>
+                            </offsets>
+                        </li>
+                        <!-- PRIMAL SIGIL -->
                         <li>
                             <path>Effects/Sigil/sigil</path>
                             <shaderType>Transparent</shaderType>
@@ -180,53 +226,6 @@
                                 </east>
                             </offsets>
                         </li>
-                        <!-- PRIMAL SIGHT -->
-                        <!-- Use Empyrean textures while wip-->
-                        <li>
-                            <path>Effects/Sight/sight_primordial</path>
-                            <shaderType>Transparent</shaderType>
-                            <bodyPart>Head</bodyPart>
-                            <drawnInBed>true</drawnInBed>
-                            <inFrontOfBody>true</inFrontOfBody>
-                            <layerInvert>true</layerInvert>
-                            <colorChannel>tattoo</colorChannel>
-                            <alignWithHead>true</alignWithHead>
-                            <hiddenUnderApparelFor>
-                                <li>FullHead</li>
-                            </hiddenUnderApparelFor>
-                            <drawSize>1</drawSize>
-                            <angle>0</angle>
-                            <offsets>
-                                <south>
-                                    <bodyTypes>
-                                        <Female>(0,0)</Female>
-                                        <Male>(0,0)</Male>
-                                        <Thin>(0,0)</Thin>
-                                        <Hulk>(0,0)</Hulk>
-                                        <Fat>(0,0)</Fat>
-                                    </bodyTypes>
-                                </south>
-                                <north>
-                                    <bodyTypes>
-                                        <Female>(0,0)</Female>
-                                        <Male>(0,0)</Male>
-                                        <Thin>(0,0)</Thin>
-                                        <Hulk>(0,0)</Hulk>
-                                        <Fat>(0,0)</Fat>
-                                    </bodyTypes>
-                                </north>
-                                <east>
-                                <!-- X offset needs refining - Same goes for the art assets. -->
-                                    <bodyTypes>
-                                        <Female>(0,0)</Female>
-                                        <Male>(0,0)</Male>
-                                        <Thin>(0,0)</Thin>
-                                        <Hulk>(0,0)</Hulk>
-                                        <Fat>(0,0)</Fat>
-                                    </bodyTypes>
-                                </east>
-                            </offsets>
-                        </li>
                     </bodyAddons>
             </alienPartGenerator>
         </generalSettings>
@@ -234,7 +233,7 @@
         <graphicPaths>
             <li>
                 <body>Empyrean/Body/</body>
-                <head>Empyrean/Head/</head>
+                <head>Primordial/Head/</head>
             </li>
         </graphicPaths>
 
