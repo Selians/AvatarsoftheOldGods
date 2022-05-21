@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
     <PawnKindDef Name="GodPawnKindBase" Abstract="True">
         <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
         <forceNormalGearQuality>true</forceNormalGearQuality>
@@ -20,10 +19,9 @@
 	</PawnKindDef>
 
     <PawnKindDef ParentName="GodPawnKindBase">
-        <defName>PrimordialPK</defName>
+        <defName>PrimordialKind</defName>
         <label>Primordial</label>
-        <race>S_GodPrimordial</race>
-        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <race>AvatarPrimordial</race>
         <apparelTags>
 			<li>Outlander</li>
         </apparelTags>
@@ -34,27 +32,10 @@
         <apparelMoney>1500~6000</apparelMoney>
     </PawnKindDef>
 
-<!--
     <PawnKindDef ParentName="GodPawnKindBase">
-        <defName>CelestialPK</defName>
-        <label>Celestial</label>
-        <race>S_GodCelestial</race>
-        <chemicalAddictionChance>0</chemicalAddictionChance>
-        <apparelTags>
-			<li>SpacerMilitary</li>
-        </apparelTags>
-        <weaponTags>
-			<li>MedievalMeleeAdvanced</li>
-		</weaponTags>
-        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-        <apparelMoney>1500~6000</apparelMoney>
-    </PawnKindDef>
--->
-    <PawnKindDef ParentName="GodPawnKindBase">
-        <defName>EmpyreanPK</defName>
+        <defName>EmpyreanKind</defName>
         <label>Empyrean</label>
-        <race>S_GodEmpyrean</race>
-        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <race>AvatarEmpyrean</race>
         <apparelTags>
 			<li>IndustrialMilitaryAdvanced</li>
         </apparelTags>
@@ -64,20 +45,4 @@
         <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
         <apparelMoney>1500~3000</apparelMoney>
     </PawnKindDef>
-<!--
-    <PawnKindDef ParentName="GodPawnKindBase">
-        <defName>LesserPK</defName>
-        <label>Lesser God</label>
-        <race>S_GodLesser</race>
-        <chemicalAddictionChance>0</chemicalAddictionChance>
-        <apparelTags>
-			<li>Neolithic</li>
-        </apparelTags>
-        <weaponTags>
-			<li>MedievalMeleeAdvanced</li>
-		</weaponTags>
-        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-        <apparelMoney>600~2000</apparelMoney>
-    </PawnKindDef>
--->
 </Defs>
