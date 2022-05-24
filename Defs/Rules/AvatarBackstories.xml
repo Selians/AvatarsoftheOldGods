@@ -3,7 +3,7 @@
 
 <!--CHILDHOOD BACKSTORIES (Shared)-->
 <AlienRace.BackstoryDef>
-    <defName>S_BSAvatar</defName>
+    <defName>BSAvatar</defName>
     <title>Avatar</title>
     <titleShort>Avatar</titleShort>
     <slot>Childhood</slot>
@@ -20,6 +20,9 @@
             <amount>6</amount>
         </li>
     </skillGains>
+    <forcedHediffs>
+        <li>HigherPurpose</li>
+    </forcedHediffs>
     <forcedTraits>
         <li>
             <defName>GreatMemory</defName>
@@ -32,7 +35,7 @@
 <!-- ADULT BACKSTORIES -->
 <!-- Shared / Simple backstories - No details but could work for all races-->
 <AlienRace.BackstoryDef>
-    <defName>S_BSAwakened</defName>
+    <defName>BSAwakened</defName>
     <title>Awakened</title>
     <titleShort>Awakened</titleShort>
     <slot>Adulthood</slot>
@@ -45,9 +48,9 @@
 </AlienRace.BackstoryDef>
 
 <AlienRace.BackstoryDef>
-    <defName>S_BSEvil</defName>
+    <defName>BSEvil</defName>
     <title>Corruptor</title>
-    <titleShort>CorruptorGod</titleShort>
+    <titleShort>Avatar of Corruption</titleShort>
     <slot>Adulthood</slot>
     <spawnCategories>
         <li>DivineBackstory</li>
@@ -71,9 +74,9 @@
 </AlienRace.BackstoryDef>
 
 <AlienRace.BackstoryDef>
-    <defName>S_BSDestroyer</defName>
+    <defName>BSDestroyer</defName>
     <title>Devourer</title>
-    <titleShort>DevourerGod</titleShort>
+    <titleShort>Avatar of Destruction</titleShort>
     <spawnCategories>
         <li>DivineBackstory</li>
     </spawnCategories>
@@ -97,9 +100,9 @@
 
 <!-- Need description -->
 <AlienRace.BackstoryDef>
-    <defName>S_BSProtector</defName>
+    <defName>BSProtector</defName>
     <title>Guardian</title>
-    <titleShort>ProtectorGod</titleShort>
+    <titleShort>Avatar of Protection</titleShort>
     <spawnCategories>
         <li>DivineBackstory</li>
     </spawnCategories>
@@ -123,9 +126,9 @@
 
 <!-- Need description -->
 <AlienRace.BackstoryDef>
-    <defName>S_BSDeath</defName>
+    <defName>BSDeath</defName>
     <title>God of Death</title>
-    <titleShort>DeathGod</titleShort>
+    <titleShort>Avatar of Death</titleShort>
     <spawnCategories>
         <li>DivineBackstory</li>
     </spawnCategories>
@@ -153,9 +156,9 @@
 
 <!-- Need description -->
 <AlienRace.BackstoryDef>
-    <defName>S_BSCreator</defName>
+    <defName>BSCreator</defName>
     <title>Creator</title>
-    <titleShort>Creator</titleShort>
+    <titleShort>Avatar of Creation</titleShort>
     <spawnCategories>
         <li>DivineBackstory</li>
     </spawnCategories>
@@ -186,9 +189,9 @@
 
 <!-- Need description -->
 <AlienRace.BackstoryDef>
-    <defName>S_BSOracle</defName>
+    <defName>BSOracle</defName>
     <title>Oracle</title>
-    <titleShort>Oracle</titleShort>
+    <titleShort>Avatar of Divination</titleShort>
     <spawnCategories>
         <li>DivineBackstory</li>
     </spawnCategories>
@@ -209,9 +212,9 @@
 
 <!-- Need description -->
 <AlienRace.BackstoryDef>
-    <defName>S_BSWargod</defName>
+    <defName>BSWargod</defName>
     <title>God of War</title>
-    <titleShort>WarGod</titleShort>
+    <titleShort>Avatar of War</titleShort>
     <spawnCategories>
         <li>DivineBackstory</li>
     </spawnCategories>
@@ -235,9 +238,9 @@
 
 <!-- Need description -->
 <AlienRace.BackstoryDef>
-    <defName>S_BSNaturegod</defName>
+    <defName>BSNaturegod</defName>
     <title>God of the Wilds</title>
-    <titleShort>NatureGod</titleShort>
+    <titleShort>Avatar of Nature</titleShort>
     <spawnCategories>
         <li>DivineBackstory</li>
     </spawnCategories>
@@ -261,9 +264,9 @@
 
 <!-- Need description -->
 <AlienRace.BackstoryDef>
-    <defName>S_BSElementalGod</defName>
+    <defName>BSElementalGod</defName>
     <title>God of the Elements</title>
-    <titleShort>ElementalGod</titleShort>
+    <titleShort>Avatar of Elements</titleShort>
     <spawnCategories>
         <li>DivineBackstory</li>
     </spawnCategories>
@@ -287,9 +290,9 @@
 
 <!-- Need description -->
 <AlienRace.BackstoryDef>
-    <defName>S_BSTricksterGod</defName>
+    <defName>BSTricksterGod</defName>
     <title>God of Mischief</title>
-    <titleShort>TricksterGod</titleShort>
+    <titleShort>Avatar of Tricks</titleShort>
     <spawnCategories>
         <li>DivineBackstory</li>
     </spawnCategories>
@@ -313,9 +316,9 @@
 
 <!-- Need description -->
 <AlienRace.BackstoryDef>
-    <defName>S_BSCraftGod</defName>
+    <defName>BSCraftGod</defName>
     <title>God of the Craft</title>
-    <titleShort>CraftGod</titleShort>
+    <titleShort>Avatar of Crafting</titleShort>
     <spawnCategories>
         <li>DivineBackstory</li>
     </spawnCategories>
@@ -340,9 +343,9 @@
 
 <!-- Need description -->
 <AlienRace.BackstoryDef>
-    <defName>S_BSWisdomGod</defName>
+    <defName>BSWisdomGod</defName>
     <title>God of Wisdom</title>
-    <titleShort>WisdomGod</titleShort>
+    <titleShort>Avatar of Wisdom</titleShort>
     <spawnCategories>
         <li>DivineBackstory</li>
     </spawnCategories>
@@ -362,9 +365,9 @@
 
 <!-- Need description -->
 <AlienRace.BackstoryDef>
-    <defName>S_BSPleasureGod</defName>
+    <defName>BSPleasureGod</defName>
     <title>God of Pleasure</title>
-    <titleShort>PleasureGod</titleShort>
+    <titleShort>Avatar of Pleasure</titleShort>
     <spawnCategories>
         <li>DivineBackstory</li>
     </spawnCategories>

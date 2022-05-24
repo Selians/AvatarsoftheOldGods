@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-	<name>Alien Race Template</name>
+	<name>Avatars of the Old Gods</name>
 	<author>Selians</author>
-	<packageId>Selians.Races.OldGodsTemplate</packageId>
+	<packageId>Selians.Races.OldGods</packageId>
     <supportedVersions>
         <li>1.3</li>
     </supportedVersions>
 
 	<description>V1.0
-    This mod serves as a basic template for a humanoid race. To be used in the Old Gods race mod.
+    Adds incarnations gods to the rimworlds.
 	</description>
 
 	<modDependencies>

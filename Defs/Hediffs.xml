@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- GOOD TO HAVE -->
+    <HediffDef>
+        <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+        <defName>HigherPurpose</defName>
+        <label>higher purpose</label>
+        <labelNoun>a higher purpose</labelNoun>
+        <description>Playing an important part in a larger play, this avatar knows exactly what needs to be done in the grand scheme of things.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <stages>
+        <li>
+            <partIgnoreMissingHP>true</partIgnoreMissingHP> <!-- to avoid penalties from brain injuries, so manipulation is 100%+ -->
+            <capMods>
+                <li>
+                    <capacity>Talking</capacity>
+                    <offset>1.5</offset>
+                </li>
+                <li>
+                    <capacity>Consciousness</capacity>
+                    <offset>3</offset>
+                </li>
+                <li>
+                    <capacity>Manipulation</capacity>
+                    <offset>1.5</offset>
+                </li>
+                <li>
+                    <capacity>Sight</capacity>
+                    <offset>1.5</offset>
+                </li>
+                <li>
+                    <capacity>Hearing</capacity>
+                    <offset>1.2</offset>
+                </li>
+                <li>
+                    <capacity>Breathing</capacity>
+                    <offset>1.2</offset>
+                </li>
+                <li>
+                    <capacity>BloodFiltration</capacity>
+                    <offset>1.4</offset>
+                </li>
+                <li>
+                    <capacity>BloodPumping</capacity>
+                    <offset>1.4</offset>
+                </li>
+                <li>
+                    <capacity>Metabolism</capacity>
+                    <offset>1.25</offset>
+                </li>
+            </capMods>
+        </li>
+        </stages>
+    </HediffDef>
+
+<!-- NOT GOOD TO HAVE -->
+
+<!--
+    <HediffDef ParentName="DiseaseBase">
+        <defName>StoneRot</defName>
+        <label>stone</label>
+        <labelNoun>stone rot</labelNoun>
+        <description>An otherworldy poison which slowly renders pawns paralyzed, their essence withering away as it progresses. Consorts of the Mori Aohr are well known for using this poison to render avatars disabled.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Talking</capacity>
+                        <setMax>0</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+-->
+</Defs>

@@ -141,10 +141,10 @@
         <li>
             <label>mind</label>
             <capacities>
-            <li>Blunt</li>
+            <li>ToxicBite</li>
             </capacities>
             <power>15</power>
-            <cooldownTime>30</cooldownTime>
+            <cooldownTime>1</cooldownTime>
             <linkedBodyPartsGroup>Eyes</linkedBodyPartsGroup>
             <surpriseAttack>
             <extraMeleeDamages>
@@ -154,6 +154,7 @@
                 </li>
             </extraMeleeDamages>
             </surpriseAttack>
+            <chanceFactor>0.1</chanceFactor>
         </li>
     </tools>
 
@@ -204,7 +205,7 @@
 
     <race>
         <hasGenders>true</hasGenders>
-        <baseBodySize>1.1</baseBodySize>
+        <baseBodySize>1</baseBodySize>
         <baseHealthScale>1.8</baseHealthScale>
         <manhunterOnDamageChance>0</manhunterOnDamageChance>
         <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
@@ -213,7 +214,7 @@
     <alienRace>
         <generalSettings>
             <alienPartGenerator>
-            	<customDrawSize>(1.2, 1.2)</customDrawSize>
+            	<customDrawSize>(1, 1)</customDrawSize>
 				<customPortraitDrawSize>(1, 1)</customPortraitDrawSize>
 
                 <aliencrowntypes>
@@ -370,11 +371,11 @@
                                 <east>
                                 <!-- X offset needs refining - Same goes for the art assets. -->
                                     <bodyTypes>
-                                        <Female>(0.45,0.65)</Female>
-                                        <Male>(0.45,0.65)</Male>
-                                        <Thin>(0.45,0.65)</Thin>
-                                        <Hulk>(0.45,0.7)</Hulk>
-                                        <Fat>(0.45,0.65)</Fat>
+                                        <Female>(0,0)</Female>
+                                        <Male>(0,0)</Male>
+                                        <Thin>(0,0)</Thin>
+                                        <Hulk>(0,0)</Hulk>
+                                        <Fat>(0,0)</Fat>
                                     </bodyTypes>
                                 </east>
                             </offsets>
@@ -448,6 +449,14 @@
     <defName>AvatarPrimordial</defName>
     <description>Primordial gods are beings who are born of the void, hailing from before the creation of the universe and stars. An eternal and dominating presence, with an avatar which can not be killed by conventional means.</description>
     
+    <race>
+        <hasGenders>true</hasGenders>
+        <baseBodySize>1</baseBodySize>
+        <baseHealthScale>2.4</baseHealthScale>
+        <manhunterOnDamageChance>0</manhunterOnDamageChance>
+        <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+    </race>
+
     <statBases>
     <!--Dominating, eternal, fearful, impenetrable-->
         <ComfyTemperatureMin>-3500</ComfyTemperatureMin>
@@ -457,7 +466,7 @@
     <alienRace>
         <generalSettings>
             <alienPartGenerator>
-            	<customDrawSize>(1.2, 1.2)</customDrawSize>
+            	<customDrawSize>(1, 1)</customDrawSize>
 				<customPortraitDrawSize>(1, 1)</customPortraitDrawSize>
 
     <!-- Use Empyrean textures while wip-->
@@ -489,6 +498,10 @@
                                 <li>
                                     <weight>10</weight>
                                     <only>RGBA(68, 55, 48, 255)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(83, 201, 242, 180)</only>
                                 </li>
                             </options>
                         </first>
@@ -685,16 +698,6 @@
             <hasBlood>true</hasBlood>
         </compatibility>
     </alienRace>
-
-    <race>
-        <hasGenders>true</hasGenders>
-        <baseBodySize>1.25</baseBodySize>
-        <baseHealthScale>2.4</baseHealthScale>
-        <manhunterOnDamageChance>0</manhunterOnDamageChance>
-        <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
-    </race>
 </AlienRace.ThingDef_AlienRace>
-
-
 
 </Defs>
