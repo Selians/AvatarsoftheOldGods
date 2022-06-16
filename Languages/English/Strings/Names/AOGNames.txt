@@ -64,7 +64,6 @@ Arianrhod
 Arito
 Arnemetia
 Artemis
-Artemis
 Asclepius
 Asgard
 Asherah
@@ -80,6 +79,7 @@ Aten
 Athena
 Attis
 Atum
+Aurvandil
 Avandra
 Aveta
 Ayao

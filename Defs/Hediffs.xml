@@ -4,53 +4,60 @@
 <!-- GOOD TO HAVE -->
     <HediffDef>
         <defaultLabelColor>(1, 1, 1)</defaultLabelColor>
-        <defName>HigherPurpose</defName>
-        <label>higher purpose</label>
-        <labelNoun>a higher purpose</labelNoun>
-        <description>Playing an important part in a larger play, this avatar knows exactly what needs to be done in the grand scheme of things.</description>
+        <defName>Avatar</defName>
+        <label>Avatar</label>
+        <labelNoun>Avatar</labelNoun>
+        <description>This pawn is an avatar in the image of its creator, representing an ancient god. Being shaped through purest methods of creation, it functions far beyond our comprehension and is able to recover from disease and damage with ease. While immortal, it is but an extension of a divine being and therefore not invulnerable...</description>
         <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_HealPermanentWounds" />
+        </comps>
         <stages>
-        <li>
-            <partIgnoreMissingHP>true</partIgnoreMissingHP> <!-- to avoid penalties from brain injuries, so manipulation is 100%+ -->
-            <capMods>
-                <li>
-                    <capacity>Talking</capacity>
-                    <offset>1.5</offset>
-                </li>
-                <li>
-                    <capacity>Consciousness</capacity>
-                    <offset>3</offset>
-                </li>
-                <li>
-                    <capacity>Manipulation</capacity>
-                    <offset>1.5</offset>
-                </li>
-                <li>
-                    <capacity>Sight</capacity>
-                    <offset>1.5</offset>
-                </li>
-                <li>
-                    <capacity>Hearing</capacity>
-                    <offset>1.2</offset>
-                </li>
-                <li>
-                    <capacity>Breathing</capacity>
-                    <offset>1.2</offset>
-                </li>
-                <li>
-                    <capacity>BloodFiltration</capacity>
-                    <offset>1.4</offset>
-                </li>
-                <li>
-                    <capacity>BloodPumping</capacity>
-                    <offset>1.4</offset>
-                </li>
-                <li>
-                    <capacity>Metabolism</capacity>
-                    <offset>1.25</offset>
-                </li>
-            </capMods>
-        </li>
+            <li>
+                <partIgnoreMissingHP>true</partIgnoreMissingHP>
+                <statOffsets>
+                    <ImmunityGainSpeed>0.75</ImmunityGainSpeed>
+                    <InjuryHealingFactor>0.75</InjuryHealingFactor>
+                </statOffsets>
+                <capMods>
+                    <li>
+                        <capacity>Talking</capacity>
+                        <offset>1.5</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>3</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>1.5</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>1.5</offset>
+                    </li>
+                    <li>
+                        <capacity>Hearing</capacity>
+                        <offset>1.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>1.2</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>1.4</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>1.4</offset>
+                    </li>
+                    <li>
+                        <capacity>Metabolism</capacity>
+                        <offset>1.25</offset>
+                    </li>
+                </capMods>
+            </li>
         </stages>
     </HediffDef>
 

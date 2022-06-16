@@ -261,29 +261,41 @@
                     </li>
 
                     <li>
-                    <!-- Tattoo colors are used to color the halos & divine shine. Figure out how to replace this with a slider if possible, would be a lot cooler - otherwise predetermine colors. -->
+                    <!-- Tattoo colors are used to color the halos & divine shine. Figure out how to replace this with a slider if possible, would be a lot cooler - otherwise predetermined colors. -->
                         <name>tattoo</name>
                         <first Class="ColorGenerator_Options">
                             <options>
                                 <li>
                                     <weight>10</weight>
-                                    <only>RGBA(255, 234, 160, 185)</only>
+                                    <only>RGBA(255, 234, 160, 190)</only>
                                 </li>
                                 <li>
                                     <weight>10</weight>
-                                    <only>RGBA(194, 17, 61, 185)</only>
+                                    <only>RGBA(194, 17, 61, 190)</only>
                                 </li>
                                 <li>
                                     <weight>10</weight>
-                                    <only>RGBA(31, 245, 53, 185)</only>
+                                    <only>RGBA(31, 245, 53, 190)</only>
                                 </li>
                                 <li>
                                     <weight>10</weight>
-                                    <only>RGBA(36, 196, 240, 185)</only>
+                                    <only>RGBA(36, 196, 240, 190)</only>
                                 </li>
                                 <li>
                                     <weight>10</weight>
-                                    <only>RGBA(215, 255, 253, 185)</only>
+                                    <only>RGBA(215, 255, 253, 190)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(35, 243, 200, 190)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(255, 254, 249, 190)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(135, 52, 145, 190)</only>
                                 </li>
                             </options>
                         </first>
@@ -386,7 +398,7 @@
                             <shaderType>Transparent</shaderType>
                             <bodyPart>Head</bodyPart>
                             <drawnInBed>false</drawnInBed>
-                            <inFrontOfBody>false</inFrontOfBody>
+                            <inFrontOfBody>true</inFrontOfBody>
                             <layerInvert>false</layerInvert>
                             <colorChannel>tattoo</colorChannel>
                             <drawSize>1</drawSize>
@@ -394,30 +406,30 @@
                             <offsets>
                                 <south>
                                     <bodyTypes>
-                                        <Female>(0,0.4)</Female>
-                                        <Male>(0,0.4)</Male>
-                                        <Thin>(0,0.4)</Thin>
-                                        <Hulk>(0,0.45)</Hulk>
-                                        <Fat>(0,0.4)</Fat>
+                                        <Female>(0,0.7)</Female>
+                                        <Male>(0,0.7)</Male>
+                                        <Thin>(0,0.7)</Thin>
+                                        <Hulk>(0,0.8)</Hulk>
+                                        <Fat>(0,0.7)</Fat>
                                     </bodyTypes>
                                 </south>
                                 <north>
                                     <bodyTypes>
-                                        <Female>(0,0.4)</Female>
-                                        <Male>(0,0.4)</Male>
-                                        <Thin>(0,0.4)</Thin>
-                                        <Hulk>(0,0.45)</Hulk>
-                                        <Fat>(0,0.4)</Fat>
+                                        <Female>(0,0.7)</Female>
+                                        <Male>(0,0.7)</Male>
+                                        <Thin>(0,0.7)</Thin>
+                                        <Hulk>(0,0.8)</Hulk>
+                                        <Fat>(0,0.7)</Fat>
                                     </bodyTypes>
                                 </north>
                                 <east>
                                 <!-- X offset needs refining - Same goes for the art assets. -->
                                     <bodyTypes>
-                                        <Female>(0.45,0.65)</Female>
-                                        <Male>(0.45,0.65)</Male>
-                                        <Thin>(0.45,0.65)</Thin>
-                                        <Hulk>(0.45,0.7)</Hulk>
-                                        <Fat>(0.45,0.65)</Fat>
+                                        <Female>(0,0.7)</Female>
+                                        <Male>(0,0.7)</Male>
+                                        <Thin>(0,0.7)</Thin>
+                                        <Hulk>(0,0.8)</Hulk>
+                                        <Fat>(0,0.7)</Fat>
                                     </bodyTypes>
                                 </east>
                             </offsets>
@@ -503,42 +515,54 @@
                                     <weight>10</weight>
                                     <only>RGBA(83, 201, 242, 180)</only>
                                 </li>
-                            </options>
-                        </first>
-                        <!--<second Class="ColorGenerator_Options">
-                            <options>
                                 <li>
                                     <weight>10</weight>
-                                    <only>RGBA(0.500, 1.000, 0.000, 1.000)</only>
+                                    <only>RGBA(60, 52, 65, 255)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(250, 250, 250, 255)</only>
                                 </li>
                             </options>
-                        </second>-->
+                        </first>
                     </li>
 
                     <li>
-                    <!-- Tattoo colors are used to color the halos & divine shine. Figure out how to replace this with a slider if possible, would be a lot cooler - otherwise predetermine colors. -->
+                    <!-- Tattoo colors are used to color the halos & divine shine. Figure out how to replace this with a slider if possible, would be a lot cooler - otherwise predetermined colors. -->
                         <name>tattoo</name>
                         <first Class="ColorGenerator_Options">
                             <options>
                                 <li>
                                     <weight>10</weight>
-                                    <only>RGBA(255, 234, 160, 255)</only>
+                                    <only>RGBA(255, 234, 160, 190)</only>
                                 </li>
                                 <li>
                                     <weight>10</weight>
-                                    <only>RGBA(194, 17, 61, 255)</only>
+                                    <only>RGBA(194, 17, 61, 190)</only>
                                 </li>
                                 <li>
                                     <weight>10</weight>
-                                    <only>RGBA(31, 245, 53, 255)</only>
+                                    <only>RGBA(31, 245, 53, 190)</only>
                                 </li>
                                 <li>
                                     <weight>10</weight>
-                                    <only>RGBA(36, 196, 240, 255)</only>
+                                    <only>RGBA(36, 196, 240, 190)</only>
                                 </li>
                                 <li>
                                     <weight>10</weight>
-                                    <only>RGBA(215, 255, 253, 255)</only>
+                                    <only>RGBA(215, 255, 253, 190)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(35, 243, 200, 190)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(255, 254, 249, 190)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>RGBA(135, 52, 145, 190)</only>
                                 </li>
                             </options>
                         </first>
